@@ -173,7 +173,7 @@ Supporting True Colour:
 * [emacs](https://www.gnu.org/software/emacs/) - since [26.1 release](https://lists.gnu.org/archive/html/emacs-devel/2018-05/msg00765.html)
 * [micro editor](https://micro-editor.github.io/)
 * [elinks](http://repo.or.cz/w/elinks.git) - [configure.in:1410](http://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410) (./configure --enable-true-color)
-* [tcell](github.com/gdamore/tcell) library for Go language
+* [tcell](https://github.com/gdamore/tcell) library for Go language
 * [timg](https://github.com/hzeller/timg) - Terminal Image Viewer
 * [tv](https://github.com/daleroberts/tv) - tool to quickly view high-resolution multi-band imagery directly in terminal
 * [termimage](https://github.com/nabijaczleweli/termimage) - terminal image viewer
