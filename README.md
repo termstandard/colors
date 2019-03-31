@@ -83,7 +83,7 @@ lead to a more seamless desktop experience where only one variable needs to be
 set. This would be system-wide so that the user would not need to set it
 separately for each app.
 
-# TrueColour Compatibility
+# Terminals + TrueColour
 
 ## Now **Supporting** TrueColour
 
@@ -137,6 +137,8 @@ separately for each app.
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed
   source since
   [7.19.0 version](http://www.emtec.com/downloads/zoc/zoc_changes.txt)
+- [upterm](https://github.com/railsware/upterm) *Windows/Macos/Linux Electron* -
+  A terminal emulator for the 21st century.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - all [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
@@ -167,6 +169,7 @@ separately for each app.
     [Pantheon Terminal](https://launchpad.net/pantheon-terminal)
   - **libvte**-based [lxterminal](http://sourceforge.net/projects/lxde) - with
     **--enable-gtk3** configure flag.
+  - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
@@ -218,10 +221,15 @@ much more complex)
 
 ## **NOT Supporting** TrueColour
 
+- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): Macos Terminal builtin
 - [Terminology](https://www.enlightenment.org/about-terminology)
   (Enlightenment) - https://phab.enlightenment.org/T746
 - [Hyper.app](https://hyper.is/) [delimeter: semicolon] - crossplatform,
   HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
+- [Cmder](https://cmder.net/): Portable console emulator for Windows,
+  based on ConEmu.
+- [Terminus](https://github.com/Eugeny/terminus): 
+  highly configurable terminal emulator for Windows, macOS and Linux
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) -
   https://sourceforge.net/p/materm/feature-requests/41/
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
@@ -246,6 +254,8 @@ much more complex)
   - **libvte**-based [GTKTerm2](http://gtkterm.feige.net/)
   - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks
     abandoned) - https://github.com/stjerm/stjerm/issues/39
+
+# Console Programs + TrueColour
 
 ## Console Programs Supporting TrueColour
 
@@ -291,7 +301,7 @@ much more complex)
 - [radare2](https://github.com/radare/radare2) - reverse engineering franework;
   since 0.9.6 version.
 
-## Does Not Support TrueColour
+## Console Programs Not Supporting TrueColour
 
 - mutt (email client) - http://dev.mutt.org/trac/ticket/3674
 - neomutt (email client) - https://github.com/neomutt/neomutt/issues/85
