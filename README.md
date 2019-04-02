@@ -4,21 +4,21 @@ There exists common confusion about terminal colors. This is what we have right 
 
 - Plain ASCII
 - ANSI escape codes: 16 color codes with bold/italic and background
-- 256 color palette: 216 colours + 16 ANSI + 24 gray (colors are 24-bit)
-- 24-bit true color: "888" colours (aka 16 milion)
+- 256 color palette: 216 colors + 16 ANSI + 24 gray (colors are 24-bit)
+- 24-bit true color: "888" colors (aka 16 milion)
 
 ```
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
 ```
 
-The 256-color palette is configured at start and is a 666-cube of colours,
+The 256-color palette is configured at start and is a 666-cube of colors,
 each of them defined as a 24-bit (888 rgb) color.
 
 This means that current support can only display 256 different colors in the
 terminal while "true color" means that you can display 16 million different
 colors at the same time.
 
-Truecolor escape codes do not use a colour palette. They just specify the
+Truecolor escape codes do not use a color palette. They just specify the
 color itself.
 
 This is a good test case:
@@ -188,7 +188,7 @@ still worth mentioning:
 
 ## Terminals that parse ANSI color sequences, but approximate them to 256 palette
 
-- xterm (but doing it wrong: "it uses nearest color in RGB colour space,
+- xterm (but doing it wrong: "it uses nearest color in RGB color space,
   with a usualfalse assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
   since
