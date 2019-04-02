@@ -1,25 +1,25 @@
-# Terminal Colours
+# Terminal Colors
 
-There exists common confusion about terminal colours. This is what we have right now:
+There exists common confusion about terminal colors. This is what we have right now:
 
 - Plain ASCII
-- ANSI escape codes: 16 colour codes with bold/italic and background
-- 256 colour palette: 216 colours + 16 ANSI + 24 gray (colors are 24-bit)
-- 24-bit true colour: "888" colours (aka 16 milion)
+- ANSI escape codes: 16 color codes with bold/italic and background
+- 256 color palette: 216 colours + 16 ANSI + 24 gray (colors are 24-bit)
+- 24-bit true color: "888" colours (aka 16 milion)
 
 ```
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
 ```
 
-The 256-colour palette is configured at start and is a 666-cube of colours,
-each of them defined as a 24-bit (888 rgb) colour.
+The 256-color palette is configured at start and is a 666-cube of colours,
+each of them defined as a 24-bit (888 rgb) color.
 
-This means that current support can only display 256 different colours in the
-terminal while "TrueColour" means that you can display 16 million different
-colours at the same time.
+This means that current support can only display 256 different colors in the
+terminal while "true color" means that you can display 16 million different
+colors at the same time.
 
-Truecolour escape codes do not use a colour palette. They just specify the
-colour itself.
+Truecolor escape codes do not use a colour palette. They just specify the
+color itself.
 
 This is a good test case:
 
@@ -58,11 +58,11 @@ According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 
 Since
 [ncurses-6.0-20180121](http://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
-terminfo began to support the 24-bit TrueColour capability under the name of
-"RGB". You need to use the "setaf" and "setab" commands to set the foreground 
+terminfo began to support the 24-bit True Color capability under the name of
+"RGB". You need to use the "setaf" and "setab" commands to set the foreground
 and background respectively.
 
-# TrueColour Detection
+# True Color Detection
 
 There will be no reliable way to detect the "RGB" flag until the new release of
 terminfo/ncurses. S-Lang author added a check for $COLORTERM containing either
@@ -83,9 +83,9 @@ lead to a more seamless desktop experience where only one variable needs to be
 set. This would be system-wide so that the user would not need to set it
 separately for each app.
 
-# Terminals + TrueColour
+# Terminals + True Color
 
-## Now **Supporting** TrueColour
+## Now **Supporting** True Color
 
 - [st](http://st.suckless.org/) (from suckless) [delimeter: semicolon] -
   http://lists.suckless.org/dev/1307/16688.html
@@ -180,15 +180,15 @@ still worth mentioning:
 - [asciinema](http://asciinema.org) player:
   https://github.com/asciinema/asciinema-player
 
-## Improper Support for TrueColour
+## Improper Support for True Color
 
 - [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
   configure flag. Approximates colors to 512 embedded palette
   (https://sourceforge.net/p/mlterm/bugs/74/)
 
-## Terminals that parse ANSI colour sequences, but approximate them to 256 palette
+## Terminals that parse ANSI color sequences, but approximate them to 256 palette
 
-- xterm (but doing it wrong: "it uses nearest colour in RGB colour space,
+- xterm (but doing it wrong: "it uses nearest color in RGB colour space,
   with a usualfalse assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
   since
@@ -198,10 +198,10 @@ still worth mentioning:
 - linux console (since v3.16):
   https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4
 
-Note about colour differences: 
+Note about color differences:
 a) RGB axes are not orthogonal, so you cannot use
 sqrt(R^2+G^2+B^2) formula
-b) for colour differences there is more correct (but
+b) for color differences there is more correct (but
 much more complex)
 [CIEDE2000](http://en.wikipedia.org/wiki/Color_difference#CIEDE2000) formula
 (which may easily blow up performance if used blindly) [2].
@@ -215,11 +215,11 @@ much more complex)
 - [screen](http://git.savannah.gnu.org/cgit/screen.git/) - has support in
   'master' branch, need to be enabled (see 'truecolor' option)
 - [pymux](https://github.com/jonathanslenders/pymux) - tmux clone in pure Python
-  (to enable truecolour run pymux with `--truecolor` option)
-- [dvtm](https://github.com/martanne/dvtm) - not yet supporting True Colour
+  (to enable truecolor run pymux with `--truecolor` option)
+- [dvtm](https://github.com/martanne/dvtm) - not yet supporting True Color
   https://github.com/martanne/dvtm/issues/10
 
-## **NOT Supporting** TrueColour
+## **NOT Supporting** True Color
 
 - [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): Macos Terminal builtin
 - [Terminology](https://www.enlightenment.org/about-terminology)
@@ -228,7 +228,7 @@ much more complex)
   HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 - [Cmder](https://cmder.net/): Portable console emulator for Windows,
   based on ConEmu.
-- [Terminus](https://github.com/Eugeny/terminus): 
+- [Terminus](https://github.com/Eugeny/terminus):
   highly configurable terminal emulator for Windows, macOS and Linux
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) -
   https://sourceforge.net/p/materm/feature-requests/41/
@@ -255,9 +255,9 @@ much more complex)
   - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks
     abandoned) - https://github.com/stjerm/stjerm/issues/39
 
-# Console Programs + TrueColour
+# Console Programs + True Color
 
-## Console Programs Supporting TrueColour
+## Console Programs Supporting True Color
 
 - [s-lang](http://lists.jedsoft.org/lists/slang-users/2015/0000020.html)
   library - (since pre2.3.1-35, for 64bit systems)
@@ -301,7 +301,7 @@ much more complex)
 - [radare2](https://github.com/radare/radare2) - reverse engineering franework;
   since 0.9.6 version.
 
-## Console Programs Not Supporting TrueColour
+## Console Programs Not Supporting True Color
 
 - mutt (email client) - http://dev.mutt.org/trac/ticket/3674
 - neomutt (email client) - https://github.com/neomutt/neomutt/issues/85
