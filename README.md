@@ -189,7 +189,7 @@ still worth mentioning:
 ## Terminals that parse ANSI color sequences, but approximate them to 256 palette
 
 - xterm (but doing it wrong: "it uses nearest color in RGB color space,
-  with a usualfalse assumption about orthogonal axes")
+  with a usual false assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
   since
   [Revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down)
