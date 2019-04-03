@@ -7,7 +7,7 @@ There exists common confusion about terminal colors. This is what we have right 
 - 256 color palette: 216 colors + 16 ANSI + 24 gray (colors are 24-bit)
 - 24-bit true color: "888" colors (aka 16 milion)
 
-```
+```bash
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
 ```
 
@@ -23,7 +23,7 @@ color itself.
 
 This is a good test case:
 
-```
+```bash
 printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
 ```
 
