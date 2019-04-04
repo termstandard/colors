@@ -123,6 +123,13 @@ separately for each app.
   semicolon] - **Windows platform**
 - [ConEmu](https://github.com/Maximus5/ConEmu) [delimeter: semicolon] -
   **Windows platform**
+- [Windows
+  Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1)
+  [delimeter: semicolon] - aka Powershell 5.x and below **Windows 10**
+- [Powershell Core](https://github.com/PowerShell/PowerShell) [delimeter:
+  semicolon] aka Powershell 6+ **Windows 10**
+- [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimeter:
+  semicolon] Builtin Windows shell that is mostly unchanged since DOS **Windows 10**
 - [FinalTerm](http://finalterm.org/) [delimeter: semicolon] -
   **[abandoned](http://worldwidemann.com/finally-terminated/)**, iTerm2
   [borrowing it's ideas and features](http://iterm2.com/shell_integration.html).
