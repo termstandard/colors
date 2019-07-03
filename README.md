@@ -83,6 +83,45 @@ lead to a more seamless desktop experience where only one variable needs to be
 set. This would be system-wide so that the user would not need to set it
 separately for each app.
 
+## Querying The Terminal
+
+A more reliable method in an interactive program which can read terminal
+responses, and one that is transparent to things like sudo, SSH, etc.. is to
+simply try setting a truecolor value and then query the terminal to ask what
+color it currently has. If the response replies the same color that was set
+then it indicates truecolor is supported.
+
+```bash
+$ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\'; xxd)
+
+^[P1$r48:2:1:2:3m^[\
+00000000: 1b50 3124 7234 383a 323a 313a 323a 336d  .P1$r48:2:1:2:3m
+```
+
+Here we ask to set the background color to `RGB(1,2,3)` - an unlikely default
+choice - and request the value that we just set. The response comes back that
+the request was understood (`1`), and that the color is indeed `48:2:1:2:3`.
+This tells us also that the terminal supports the colon delimiter. If instead,
+the terminal did not support truecolor we might see a response like
+
+```
+^[P1$r40m^[\
+00000000: 1b50 3124 7234 306d 1b5c 0a              .P1$r40m.\.
+```
+
+This terminal replied the color is `40` - it has not accepted our request to
+set `48:2:1:2:3`.
+
+```
+^[P0$r^[\
+00000000: 1b50 3024 721b 5c0a                      .P0$r.\.
+```
+
+This terminal did not even understand the DECRQSS request - its response was
+`0$r`. We do not learn if it managed to set the color, but since it doesn't
+understand how to reply to our request it is unlikely to support truecolor
+either.
+
 # Terminals + True Color
 
 ## Now **Supporting** True Color
