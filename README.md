@@ -149,7 +149,7 @@ separately for each app.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - all [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
-  (since 0.36 version) [delimeter: colon, semilocon] -
+  (since 0.36 version) [delimeter: colon, semicolon] -
   https://bugzilla.gnome.org/show_bug.cgi?id=704449
   - **libvte**-based
     [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
