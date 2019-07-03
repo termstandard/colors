@@ -107,7 +107,7 @@ separately for each app.
 - [mosh](https://mosh.org/) (Mobile SHell) [delimeter: semicolon] - since commit
   https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835
 - [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimeter:
-  semicolon] - **abandoned**
+  colon, semicolon]
 - [Termux](https://termux.com/) [delimeter: semicolon] - **Android platform**
 - [ConnectBot](https://connectbot.org/) - **Android platform** - since
   https://github.com/connectbot/connectbot/commit/3bcc75ccedaf2136b04c5932c81a5155f29dc3b5
