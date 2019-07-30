@@ -92,7 +92,7 @@ color it currently has. If the response replies the same color that was set
 then it indicates truecolor is supported.
 
 ```bash
-$ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' | xxd)
+$ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd)
 
 ^[P1$r48:2:1:2:3m^[\
 00000000: 1b50 3124 7234 383a 323a 313a 323a 336d  .P1$r48:2:1:2:3m
