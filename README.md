@@ -356,6 +356,7 @@ much more complex)
   https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors
 - tig (git TUI) - https://github.com/jonas/tig/issues/227
 - cmus (music player) - https://github.com/cmus/cmus/issues/799
+- weechat (chat client) - https://github.com/weechat/weechat/issues/1364
 - scim (spreadsheet program) - https://github.com/andmarti1424/sc-im/issues/306
 - [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET
   (curses-like) - https://github.com/migueldeicaza/gui.cs/issues/48
