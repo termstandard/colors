@@ -241,8 +241,7 @@ still worth mentioning:
   [Revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down)
   http://lists.schmorp.de/pipermail/rxvt-unicode/2016q2/002261.html (Note there
   is a restriction of colors count still)
-- linux console (since v3.16):
-  https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4
+- linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
 
 Note about color differences:
 a) RGB axes are not orthogonal, so you cannot use
@@ -280,8 +279,6 @@ much more complex)
   https://sourceforge.net/p/materm/feature-requests/41/
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
   https://sourceforge.net/p/aterm/feature-requests/23/
-- [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (from linux
-  kernel) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
 - FreeBSD console - https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652
 - [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal -
   https://github.com/uobikiemukot/yaft/issues/12
