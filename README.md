@@ -75,7 +75,7 @@ still git-only in Konsole and iTerm2).
 
 This is obviously not a reliable method, and is not forwarded via sudo, SSH etc.
 However, whenever it errs, it errs on the safe side. It does not advertise
-support when it is actually supported. App developers can freely choose to
+support when it is actually unsupported. App developers can freely choose to
 check for this same variable, or introduce their own method (e.g. an option in
 their config file). They should use whichever method best matches the overall
 design of their app. Checking $COLORTERM is recommended though since it will
