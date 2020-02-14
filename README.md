@@ -216,7 +216,7 @@ either.
   - **libvte**-based [lxterminal](http://sourceforge.net/projects/lxde) - with
     **--enable-gtk3** configure flag.
   - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
-- All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since v3.13, v4.3 for webgl) [delimeter: semicolon] - https://github.com/xtermjs/xterm.js/issues/484
+- All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimeter: semicolon]
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
   - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, macOS and Linux
 
