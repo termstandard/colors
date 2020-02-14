@@ -187,7 +187,7 @@ either.
   A terminal emulator for the 21st century.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
-- all [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
+- All [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
   (since 0.36 version) [delimeter: colon, semicolon] -
   https://bugzilla.gnome.org/show_bug.cgi?id=704449
   - **libvte**-based
@@ -216,6 +216,9 @@ either.
   - **libvte**-based [lxterminal](http://sourceforge.net/projects/lxde) - with
     **--enable-gtk3** configure flag.
   - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
+- All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since v3.13, v4.3 for webgl) [delimeter: semicolon] - https://github.com/xtermjs/xterm.js/issues/484
+  - [VS Code](https://code.visualstudio.com/)'s integrated terminal
+  - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, macOS and Linux
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
@@ -242,6 +245,7 @@ still worth mentioning:
   http://lists.schmorp.de/pipermail/rxvt-unicode/2016q2/002261.html (Note there
   is a restriction of colors count still)
 - linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
+- [Hyper.app](https://hyper.is/) [delimeter: semicolon] - crossplatform, HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 
 Note about color differences:
 a) RGB axes are not orthogonal, so you cannot use
@@ -269,12 +273,8 @@ much more complex)
 - [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): Macos Terminal builtin
 - [Terminology](https://www.enlightenment.org/about-terminology)
   (Enlightenment) - https://phab.enlightenment.org/T746
-- [Hyper.app](https://hyper.is/) [delimeter: semicolon] - crossplatform,
-  HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 - [Cmder](https://cmder.net/): Portable console emulator for Windows,
   based on ConEmu.
-- [Terminus](https://github.com/Eugeny/terminus):
-  highly configurable terminal emulator for Windows, macOS and Linux
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) -
   https://sourceforge.net/p/materm/feature-requests/41/
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
