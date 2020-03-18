@@ -135,21 +135,18 @@ either.
   version
 - [Therm](https://github.com/trufae/Therm) [delimeter: colon, semicolon] - fork
   of iTerm2
-- [qterminal](https://github.com/lxqt/qterminal) [delimeter: semicolon] -
-  https://github.com/qterminal/qterminal/issues/78
+- [qterminal](https://github.com/lxqt/qterminal) [delimeter: semicolon] - > 0.14.1 versions ([issue #78](https://github.com/qterminal/qterminal/issues/78))
 - [alacritty](https://github.com/jwilm/alacritty) [delimeter: semicolon] -
   written in Rust
 - [kitty](https://github.com/kovidgoyal/kitty) [delimeter: colon,semicolon] -
   uses OpenGL
 - [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimeter:
   semicolon]
-- [mosh](https://mosh.org/) (Mobile SHell) [delimeter: semicolon] - since commit
-  https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835
+- [mosh](https://mosh.org/) (Mobile SHell) [delimeter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
 - [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimeter:
   colon, semicolon]
 - [Termux](https://termux.com/) [delimeter: semicolon] - **Android platform**
-- [ConnectBot](https://connectbot.org/) - **Android platform** - since
-  https://github.com/connectbot/connectbot/commit/3bcc75ccedaf2136b04c5932c81a5155f29dc3b5
+- [ConnectBot](https://connectbot.org/) - **Android platform** - since [3bcc75ccedaf2136b04c5932c81a5155f29dc3b5](https://github.com/connectbot/connectbot/commit/3bcc75ccedaf2136b04c5932c81a5155f29dc3b5) commit.
 - [Black Screen](https://github.com/shockone/black-screen) [delimeter:
   semicolon] - crossplatform, HTML/CSS/JS-based
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) -
@@ -175,8 +172,7 @@ either.
 - [MacTerm](https://github.com/kmgrant/macterm) [delimeter: semicolon] - **Mac
   OS X platform**
 - [mintty](https://mintty.github.io/) [delimeter: semicolon] **Cygwin and
-  MSYS/MSYS2** since commit
-  https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb
+  MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb)
   (2.0.1 release) - **Windows platform**
 - [MobaXterm](http://mobaxterm.mobatek.net/) **Windows platform** - closed
   source (run `lscolors` to see a truecolor test)
@@ -202,8 +198,7 @@ either.
     since [1.90](https://launchpad.net/terminator/+announcement/14358) release
   - **libvte**-based [Tilix](https://github.com/gnunn1/tilix) - written in D.
     Similar user interface as for Terminator.
-  - **libvte**-based [Lilyterm](http://lilyterm.luna.com.tw/) - since commit
-    https://github.com/Tetralet/LilyTerm/commit/72536e7ba448ad9ef1126ce45fbde3a3407a271b
+  - **libvte**-based [Lilyterm](http://lilyterm.luna.com.tw/) - since commit [72536e7ba448ad9ef1126ce45fbde3a3407a271b](https://github.com/Tetralet/LilyTerm/commit/72536e7ba448ad9ef1126ce45fbde3a3407a271b)
   - **libvte**-based [ROXTerm](http://roxterm.sourceforge.net/)
   - **libvte**-based [evilvte](http://www.calno.com/evilvte/) - no release yet,
     version from git https://github.com/caleb-/evilvte
@@ -280,12 +275,10 @@ much more complex)
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
   https://sourceforge.net/p/aterm/feature-requests/23/
 - FreeBSD console - https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652
-- [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal -
-  https://github.com/uobikiemukot/yaft/issues/12
+- [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal - [issue #12](https://github.com/uobikiemukot/yaft/issues/12)
 - [KiTTY](http://www.9bis.net/kitty/) - **Windows platform**
 - [MTPuTTY](ttyplus.com) - **Windows platform**
-- [mRemoteNG](https://mremoteng.org/) - **Windows platform** -
-  https://github.com/mRemoteNG/mRemoteNG/issues/717
+- [mRemoteNG](https://mremoteng.org/) - **Windows platform** - [issue #717](https://github.com/mRemoteNG/mRemoteNG/issues/717)
 - [JuiceSSH](https://juicessh.com/) - **Adroid platform**, closed source
 - [Termius](https://www.termius.com/) - **Linux, Windows, OS X platforms**,
   closed source
@@ -295,8 +288,7 @@ much more complex)
   closed source (sent them an email)
 - libvte and GTK2 - based:
   - **libvte**-based [GTKTerm2](http://gtkterm.feige.net/)
-  - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks
-    abandoned) - https://github.com/stjerm/stjerm/issues/39
+  - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks abandoned) - [issue #39](https://github.com/stjerm/stjerm/issues/39)
 
 # Console Programs + True Color
 
@@ -346,14 +338,12 @@ much more complex)
 
 ## Console Programs Not Supporting True Color
 
-- mutt (email client) - http://dev.mutt.org/trac/ticket/3674
-- neomutt (email client) - https://github.com/neomutt/neomutt/issues/85
-- termbox library - https://github.com/nsf/termbox/issues/37
-- mcabber (jabber client) -
-  https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors
-- tig (git TUI) - https://github.com/jonas/tig/issues/227
-- cmus (music player) - https://github.com/cmus/cmus/issues/799
-- weechat (chat client) - https://github.com/weechat/weechat/issues/1364
-- scim (spreadsheet program) - https://github.com/andmarti1424/sc-im/issues/306
-- [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET
-  (curses-like) - https://github.com/migueldeicaza/gui.cs/issues/48
+- [mutt](http://mutt.org) (email client) - http://dev.mutt.org/trac/ticket/3674
+- [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
+- [termbox](https://github.com/nsf/termbox) library - [issue #37](https://github.com/nsf/termbox/issues/37) (there is a fork [termbox_next](https://github.com/cylgom/termbox_next) with the support
+- [https://bitbucket.org/McKael/mcabber-crew](mcabber) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
+- [tig](https://github.com/jonas/tig/) (git TUI) - [issue #227](https://github.com/jonas/tig/issues/227)
+- [cmus](https://github.com/cmus/cmus) (music player) - [issue #799](https://github.com/cmus/cmus/issues/799)
+- [weechat](https://github.com/weechat/weechat) (chat client) - [issue #1364](https://github.com/weechat/weechat/issues/1364)
+- [scim](https://github.com/andmarti1424/sc-im) (spreadsheet program) - [issue #306](https://github.com/andmarti1424/sc-im/issues/306)
+- [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET (curses-like) - [issue #48](https://github.com/migueldeicaza/gui.cs/issues/48)
