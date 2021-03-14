@@ -65,7 +65,7 @@ and background respectively.
 # True Color Detection
 
 There will be no reliable way to detect the "RGB" flag until the new release of
-terminfo/ncurses. S-Lang author added a check for $COLORTERM containing either
+terminfo/ncurses. S-Lang author added a check for `$COLORTERM` containing either
 "truecolor" or "24bit" (case sensitive). In addition,
 [VTE](https://bugzilla.gnome.org/show_bug.cgi?id=754521),
 [Konsole](https://bugs.kde.org/show_bug.cgi?id=371919) and
@@ -78,7 +78,7 @@ However, whenever it errs, it errs on the safe side. It does not advertise
 support when it is actually unsupported. App developers can freely choose to
 check for this same variable, or introduce their own method (e.g. an option in
 their config file). They should use whichever method best matches the overall
-design of their app. Checking $COLORTERM is recommended though since it will
+design of their app. Checking `$COLORTERM` is recommended though since it will
 lead to a more seamless desktop experience where only one variable needs to be
 set. This would be system-wide so that the user would not need to set it
 separately for each app.
