@@ -5,21 +5,21 @@ There exists common confusion about terminal colors. This is what we have right 
 - Plain ASCII
 - ANSI escape codes: 16 color codes with bold/italic and background
 - 256 color palette: 216 colors + 16 ANSI + 24 gray (colors are 24-bit)
-- 24-bit true color: "888" colors (aka 16 milion)
+- 24-bit true color: "888" colors (aka 16 million)
 
 ```bash
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
 ```
 
 The 256-color palette is configured at start and is a 666-cube of colors,
-each of them defined as a 24-bit (888 rgb) color.
+each of them defined as a 24-bit (888 RGB) color.
 
 This means that current support can only display 256 different colors in the
 terminal while "true color" means that you can display 16 million different
 colors at the same time.
 
 Truecolor escape codes do not use a color palette. They just specify the
-color itself.
+color directly.
 
 This is a good test case:
 
@@ -109,8 +109,8 @@ the terminal did not support truecolor we might see a response like
 00000000: 1b50 3124 7234 306d 1b5c 0a              .P1$r40m.\.
 ```
 
-This terminal replied the color is `40` - it has not accepted our request to
-set `48:2:1:2:3`.
+This terminal replied that the color is `40` - it has not accepted our request
+to set `48:2:1:2:3`.
 
 ```
 ^[P0$r^[\
@@ -135,7 +135,7 @@ either.
   version
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork
   of iTerm2
-- [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - > 0.14.1 versions ([issue #78](https://github.com/qterminal/qterminal/issues/78))
+- [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - after version 0.14.1 ([issue #78](https://github.com/qterminal/qterminal/issues/78))
 - [alacritty](https://github.com/jwilm/alacritty) [delimiter: semicolon] -
   written in Rust
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] -
@@ -148,7 +148,7 @@ either.
 - [Termux](https://termux.com/) [delimiter: semicolon] - **Android platform**
 - [ConnectBot](https://connectbot.org/) - **Android platform** - since [3bcc75ccedaf2136b04c5932c81a5155f29dc3b5](https://github.com/connectbot/connectbot/commit/3bcc75ccedaf2136b04c5932c81a5155f29dc3b5) commit.
 - [Black Screen](https://github.com/shockone/black-screen) [delimiter:
-  semicolon] - crossplatform, HTML/CSS/JS-based
+  semicolon] - cross-platform, HTML/CSS/JS-based
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) -
   HTML/CSS/JS-based (ChromeOS)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) -
@@ -161,11 +161,11 @@ either.
   **Windows platform**
 - [Windows
   Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1)
-  [delimiter: semicolon] - aka Powershell 5.x and below **Windows 10**
-- [Powershell Core](https://github.com/PowerShell/PowerShell) [delimiter:
-  semicolon] aka Powershell 6+ **Windows 10**
+  [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
+- [PowerShell Core](https://github.com/PowerShell/PowerShell) [delimiter:
+  semicolon] aka PowerShell 6+ **Windows 10**
 - [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimiter:
-  semicolon] Builtin Windows shell that is mostly unchanged since DOS **Windows 10**
+  semicolon] Built-in Windows shell that is mostly unchanged since DOS **Windows 10**
 - [FinalTerm](http://finalterm.org/) [delimiter: semicolon] -
   **[abandoned](http://worldwidemann.com/finally-terminated/)**, iTerm2
   [borrowing it's ideas and features](http://iterm2.com/shell_integration.html).
@@ -179,7 +179,7 @@ either.
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed
   source since
   [7.19.0 version](http://www.emtec.com/downloads/zoc/zoc_changes.txt)
-- [upterm](https://github.com/railsware/upterm) *Windows/Macos/Linux Electron* -
+- [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* -
   A terminal emulator for the 21st century.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
@@ -219,7 +219,7 @@ either.
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
 
-Also, while this one is not a terminal, but a terminal replayer, it is
+Also, while this one is not a terminal, but a terminal re-player, it is
 still worth mentioning:
 
 - [asciinema](http://asciinema.org) player:
@@ -228,7 +228,7 @@ still worth mentioning:
 ## Improper Support for True Color
 
 - [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
-  configure flag. Approximates colors to 512 embedded palette
+  configure flag. Approximates colors using a 512-color embedded palette
   (https://sourceforge.net/p/mlterm/bugs/74/)
 
 ## Terminals that parse ANSI color sequences, but approximate them to 256 palette
@@ -237,10 +237,10 @@ still worth mentioning:
   with a usual false assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
   since
-  [Revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down)
+  [revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down)
   http://lists.schmorp.de/pipermail/rxvt-unicode/2016q2/002261.html (Note there
   is a restriction of colors count still)
-- linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
+- Linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
 
 Note about color differences:
 a) RGB axes are not orthogonal, so you cannot use
@@ -265,21 +265,27 @@ much more complex)
 
 ## **NOT Supporting** True Color
 
-- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): Macos Terminal builtin
+- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology)
   (Enlightenment) - https://phab.enlightenment.org/T746
+- [Hyper.app](https://hyper.is/) [delimiter: semicolon] - cross-platform,
+  HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 - [Cmder](https://cmder.net/): Portable console emulator for Windows,
   based on ConEmu.
+- [Terminus](https://github.com/Eugeny/terminus):
+  highly configurable terminal emulator for Windows, MacOS and Linux
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) -
   https://sourceforge.net/p/materm/feature-requests/41/
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
   https://sourceforge.net/p/aterm/feature-requests/23/
+- [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (from Linux
+  kernel) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
 - FreeBSD console - https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652
 - [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal - [issue #12](https://github.com/uobikiemukot/yaft/issues/12)
 - [KiTTY](http://www.9bis.net/kitty/) - **Windows platform**
 - [MTPuTTY](ttyplus.com) - **Windows platform**
 - [mRemoteNG](https://mremoteng.org/) - **Windows platform** - [issue #717](https://github.com/mRemoteNG/mRemoteNG/issues/717)
-- [JuiceSSH](https://juicessh.com/) - **Adroid platform**, closed source
+- [JuiceSSH](https://juicessh.com/) - **Android platform**, closed source
 - [Termius](https://www.termius.com/) - **Linux, Windows, OS X platforms**,
   closed source
 - [SmarTTY](http://smartty.sysprogs.com/) - **Windows platform** - closed source
@@ -333,7 +339,7 @@ much more complex)
   `ls` program that supports icons
 - [mpv](https://github.com/mpv-player/mpv) - video player with support of
   console-only output (since 0.22 version)
-- [radare2](https://github.com/radare/radare2) - reverse engineering franework;
+- [radare2](https://github.com/radare/radare2) - reverse engineering framework;
   since 0.9.6 version.
 
 ## Console Programs Not Supporting True Color
