@@ -203,7 +203,7 @@ either.
   - **libvte**-based [evilvte](http://www.calno.com/evilvte/) - no release yet,
     version from git https://github.com/caleb-/evilvte
   - **libvte**-based [Termit](https://github.com/nonstop/termit)
-  - **libvte**-based [Termite](https://github.com/thestinger/termite)
+  - **libvte**-based [Termite](https://github.com/thestinger/termite) ([NOT MAINTAINED](https://github.com/thestinger/termite/issues/760))
   - **libvte**-based [Tilda](https://github.com/lanoxx/tilda)
   - **libvte**-based [tinyterm](https://code.google.com/p/tinyterm)
   - **libvte**-based
