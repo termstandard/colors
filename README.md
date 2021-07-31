@@ -214,6 +214,7 @@ either.
 - All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimeter: semicolon]
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
   - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, macOS and Linux
+  - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
@@ -240,7 +241,6 @@ still worth mentioning:
   http://lists.schmorp.de/pipermail/rxvt-unicode/2016q2/002261.html (Note there
   is a restriction of colors count still)
 - linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
-- [Hyper.app](https://hyper.is/) [delimeter: semicolon] - crossplatform, HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 
 Note about color differences:
 a) RGB axes are not orthogonal, so you cannot use
