@@ -1,4 +1,4 @@
-# Terminal Colors
+# Terminal Colors.
 
 There exists common confusion about terminal colors. This is what we have right now:
 
