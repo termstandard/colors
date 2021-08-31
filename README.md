@@ -5,7 +5,7 @@ There exists common confusion about terminal colors. This is what we have right 
 - Plain ASCII
 - ANSI escape codes: 16 color codes with bold/italic and background
 - 256 color palette: 216 colors + 16 ANSI + 24 gray (colors are 24-bit)
-- 24-bit true color: "888" colors (aka 16 million)
+- 24-bit truecolor: "888" colors (aka 16 million)
 
 ```bash
 printf "\x1b[${bg};2;${red};${green};${blue}m\n"
@@ -15,7 +15,7 @@ The 256-color palette is configured at start and is a 666-cube of colors,
 each of them defined as a 24-bit (888 RGB) color.
 
 This means that current support can only display 256 different colors in the
-terminal while "true color" means that you can display 16 million different
+terminal while "truecolor" means that you can display 16 million different
 colors at the same time.
 
 Truecolor escape codes do not use a color palette. They just specify the
@@ -58,11 +58,11 @@ According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 
 Since
 [ncurses-6.0-20180121](http://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
-terminfo began to support the 24-bit True Color capability under the name of
+terminfo began to support the 24-bit truecolor capability under the name of
 "RGB". You need to use the "setaf" and "setab" commands to set the foreground
 and background respectively.
 
-# True Color Detection
+# Truecolor Detection
 
 [VTE](https://bugzilla.gnome.org/show_bug.cgi?id=754521),
 [Konsole](https://bugs.kde.org/show_bug.cgi?id=371919) and
@@ -125,7 +125,7 @@ was just set, then truecolor is supported.
 
 If the response indicates an 8-bit color, or does not indicate a color, or if
 no response is forthcoming within a few centiseconds, then assume that
-TrueColor is not supported.
+truecolor is not supported.
 
 ```bash
 $ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd)
@@ -158,9 +158,9 @@ This terminal did not even understand the `DECRQSS` request - its response was
 doesn't understand how to reply to our request it is unlikely to support
 truecolor either.
 
-# Terminals + True Color
+# Terminals + Truecolor
 
-## Now **Supporting** True Color
+## Now **Supporting** Truecolor
 
 - [st](http://st.suckless.org/) (from suckless) [delimiter: semicolon] -
   http://lists.suckless.org/dev/1307/16688.html
@@ -190,7 +190,7 @@ truecolor either.
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) -
   [landed](https://git.tartarus.org/?p=simon/putty.git;a=commit;h=a4cbd3dfdb71d258e83bbf5b03a874c06d0b3106)
   in git (patched version [3] {xterm-like approximation to 256 colors} and [4]
-  {real true colors} available) - **Windows platform**
+  {real truecolors} available) - **Windows platform**
 - [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon,
   semicolon] - **Windows platform**
 - [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] -
@@ -261,7 +261,7 @@ still worth mentioning:
 - [asciinema](http://asciinema.org) player:
   https://github.com/asciinema/asciinema-player
 
-## Improper Support for True Color
+## Improper Support for Truecolor
 
 - [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
   configure flag. Approximates colors using a 512-color embedded palette
@@ -296,10 +296,10 @@ much more complex)
   'master' branch, need to be enabled (see 'truecolor' option)
 - [pymux](https://github.com/jonathanslenders/pymux) - tmux clone in pure Python
   (to enable truecolor run pymux with `--truecolor` option)
-- [dvtm](https://github.com/martanne/dvtm) - not yet supporting True Color
+- [dvtm](https://github.com/martanne/dvtm) - not yet supporting truecolor
   https://github.com/martanne/dvtm/issues/10
 
-## **NOT Supporting** True Color
+## **NOT Supporting** Truecolor
 
 - [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology)
@@ -332,9 +332,9 @@ much more complex)
   - **libvte**-based [GTKTerm2](http://gtkterm.feige.net/)
   - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks abandoned) - [issue #39](https://github.com/stjerm/stjerm/issues/39)
 
-# Console Programs + True Color
+# Console Programs + Truecolor
 
-## Console Programs Supporting True Color
+## Console Programs Supporting Truecolor
 
 - [s-lang](http://lists.jedsoft.org/lists/slang-users/2015/0000020.html)
   library - (since pre2.3.1-35, for 64bit systems)
@@ -351,10 +351,10 @@ much more complex)
   [8dd415e887923f99ab5daaeba9f0303e173dd1aa](https://github.com/neovim/neovim/commit/8dd415e887923f99ab5daaeba9f0303e173dd1aa);
   need to set
   [termguicolors](https://neovim.io/doc/user/options.html#%27termguicolors) to
-  enable true color.
+  enable truecolor.
 - [vim](https://github.com/vim/vim) - (from 7.4.1770); need to set
   [termguicolors](https://github.com/vim/vim/blob/master/runtime/doc/version8.txt#L202)
-  to enable true color.
+  to enable truecolor.
 - [joe](https://sf.net/p/joe-editor) - (from
   [4.5](https://sourceforge.net/p/joe-editor/news/2017/09/joe-45-released/)
   version)
@@ -378,7 +378,7 @@ much more complex)
 - [radare2](https://github.com/radare/radare2) - reverse engineering framework;
   since 0.9.6 version.
 
-## Console Programs Not Supporting True Color
+## Console Programs Not Supporting Truecolor
 
 - [mutt](http://mutt.org) (email client) - http://dev.mutt.org/trac/ticket/3674
 - [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
