@@ -58,6 +58,8 @@ According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 
 # Truecolor Detection
 
+## Checking for COLORTERM
+
 [VTE](https://bugzilla.gnome.org/show_bug.cgi?id=754521),
 [Konsole](https://bugs.kde.org/show_bug.cgi?id=371919) and
 [iTerm2](https://gitlab.com/gnachman/iterm2/issues/5294) all advertise
@@ -154,9 +156,11 @@ This terminal did not even understand the `DECRQSS` request - its response was
 doesn't understand how to reply to our request it is unlikely to support
 truecolor either.
 
-# Terminals + Truecolor
+# Truecolor Support in Output Devices
 
-## Now **Supporting** Truecolor
+## Fully Supporting
+
+### Terminal Emulators
 
 - [st](http://st.suckless.org/) (from suckless) [delimiter: semicolon] -
   http://lists.suckless.org/dev/1307/16688.html
@@ -257,14 +261,14 @@ still worth mentioning:
 - [asciinema](http://asciinema.org) player:
   https://github.com/asciinema/asciinema-player
 
-## Improper Support for Truecolor
+## Partial Support
+
+These terminal emulators parse ANSI color sequences, but approximate the true
+color using a palette. A 256-color (8-bit) palette is used unless specified.
 
 - [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
   configure flag. Approximates colors using a 512-color embedded palette
   (https://sourceforge.net/p/mlterm/bugs/74/)
-
-## Terminals that parse ANSI color sequences, but approximate them to 256 palette
-
 - xterm (but doing it wrong: "it uses nearest color in RGB color space,
   with a usual false assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
@@ -295,7 +299,7 @@ much more complex)
 - [dvtm](https://github.com/martanne/dvtm) - not yet supporting truecolor
   https://github.com/martanne/dvtm/issues/10
 
-## **NOT Supporting** Truecolor
+## Not Supporting Truecolor
 
 - [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology)
