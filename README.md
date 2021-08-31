@@ -126,28 +126,28 @@ either.
 
 ## Now **Supporting** True Color
 
-- [st](http://st.suckless.org/) (from suckless) [delimeter: semicolon] -
+- [st](http://st.suckless.org/) (from suckless) [delimiter: semicolon] -
   http://lists.suckless.org/dev/1307/16688.html
 - [xst](https://github.com/gnotclub/xst/) - fork of st
-- [konsole](http://kde.org/applications/system/konsole/) [delimeter: colon,
+- [konsole](http://kde.org/applications/system/konsole/) [delimiter: colon,
   semicolon] - https://bugs.kde.org/show_bug.cgi?id=107487
-- [iTerm2](http://www.iterm2.com/) [delimeter: colon, semicolon] - since v3
+- [iTerm2](http://www.iterm2.com/) [delimiter: colon, semicolon] - since v3
   version
-- [Therm](https://github.com/trufae/Therm) [delimeter: colon, semicolon] - fork
+- [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork
   of iTerm2
-- [qterminal](https://github.com/lxqt/qterminal) [delimeter: semicolon] - > 0.14.1 versions ([issue #78](https://github.com/qterminal/qterminal/issues/78))
-- [alacritty](https://github.com/jwilm/alacritty) [delimeter: semicolon] -
+- [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - > 0.14.1 versions ([issue #78](https://github.com/qterminal/qterminal/issues/78))
+- [alacritty](https://github.com/jwilm/alacritty) [delimiter: semicolon] -
   written in Rust
-- [kitty](https://github.com/kovidgoyal/kitty) [delimeter: colon,semicolon] -
+- [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] -
   uses OpenGL
-- [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimeter:
+- [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimiter:
   semicolon]
-- [mosh](https://mosh.org/) (Mobile SHell) [delimeter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
-- [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimeter:
+- [mosh](https://mosh.org/) (Mobile SHell) [delimiter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
+- [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimiter:
   colon, semicolon]
-- [Termux](https://termux.com/) [delimeter: semicolon] - **Android platform**
+- [Termux](https://termux.com/) [delimiter: semicolon] - **Android platform**
 - [ConnectBot](https://connectbot.org/) - **Android platform** - since [3bcc75ccedaf2136b04c5932c81a5155f29dc3b5](https://github.com/connectbot/connectbot/commit/3bcc75ccedaf2136b04c5932c81a5155f29dc3b5) commit.
-- [Black Screen](https://github.com/shockone/black-screen) [delimeter:
+- [Black Screen](https://github.com/shockone/black-screen) [delimiter:
   semicolon] - crossplatform, HTML/CSS/JS-based
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) -
   HTML/CSS/JS-based (ChromeOS)
@@ -155,23 +155,23 @@ either.
   [landed](https://git.tartarus.org/?p=simon/putty.git;a=commit;h=a4cbd3dfdb71d258e83bbf5b03a874c06d0b3106)
   in git (patched version [3] {xterm-like approximation to 256 colors} and [4]
   {real true colors} available) - **Windows platform**
-- [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimeter: colon,
+- [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon,
   semicolon] - **Windows platform**
-- [ConEmu](https://github.com/Maximus5/ConEmu) [delimeter: semicolon] -
+- [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] -
   **Windows platform**
 - [Windows
   Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1)
-  [delimeter: semicolon] - aka Powershell 5.x and below **Windows 10**
-- [Powershell Core](https://github.com/PowerShell/PowerShell) [delimeter:
+  [delimiter: semicolon] - aka Powershell 5.x and below **Windows 10**
+- [Powershell Core](https://github.com/PowerShell/PowerShell) [delimiter:
   semicolon] aka Powershell 6+ **Windows 10**
-- [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimeter:
+- [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimiter:
   semicolon] Builtin Windows shell that is mostly unchanged since DOS **Windows 10**
-- [FinalTerm](http://finalterm.org/) [delimeter: semicolon] -
+- [FinalTerm](http://finalterm.org/) [delimiter: semicolon] -
   **[abandoned](http://worldwidemann.com/finally-terminated/)**, iTerm2
   [borrowing it's ideas and features](http://iterm2.com/shell_integration.html).
-- [MacTerm](https://github.com/kmgrant/macterm) [delimeter: semicolon] - **Mac
+- [MacTerm](https://github.com/kmgrant/macterm) [delimiter: semicolon] - **Mac
   OS X platform**
-- [mintty](https://mintty.github.io/) [delimeter: semicolon] **Cygwin and
+- [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and
   MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb)
   (2.0.1 release) - **Windows platform**
 - [MobaXterm](http://mobaxterm.mobatek.net/) **Windows platform** - closed
@@ -184,7 +184,7 @@ either.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - All [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
-  (since 0.36 version) [delimeter: colon, semicolon] -
+  (since 0.36 version) [delimiter: colon, semicolon] -
   https://bugzilla.gnome.org/show_bug.cgi?id=704449
   - **libvte**-based
     [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
@@ -211,7 +211,7 @@ either.
   - **libvte**-based [lxterminal](http://sourceforge.net/projects/lxde) - with
     **--enable-gtk3** configure flag.
   - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
-- All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimeter: semicolon]
+- All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimiter: semicolon]
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
   - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, macOS and Linux
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
