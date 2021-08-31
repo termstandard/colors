@@ -63,8 +63,8 @@ According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 [iTerm2](https://gitlab.com/gnachman/iterm2/issues/5294) all advertise
 truecolor support by placing `COLORTERM=truecolor` in the environment of the
 shell user's shell. This has been in VTE for a while, but is relatively new in
-Konsole and iTerm2 (you have to compile them yourself from the git source
-repo).
+Konsole and iTerm2 and has to be enabled at compile time (most packages do not,
+so you have to compile them yourself from the git source repo).
 
 The S-Lang library has a check that `$COLORTERM` contains either "truecolor" or
 "24bit" (case sensitive).
