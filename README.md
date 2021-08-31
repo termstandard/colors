@@ -50,7 +50,7 @@ awk 'BEGIN{
 ```
 
 Keep in mind that it is possible to use both ';' and ':' as Control Sequence
-Introducer delimiters.
+delimiters.
 
 According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 
