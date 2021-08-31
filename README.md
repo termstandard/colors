@@ -288,13 +288,15 @@ color using a palette. A 256-color (8-bit) palette is used unless specified.
   is a restriction of colors count still)
 - Linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
 
-Note about color differences:
-a) RGB axes are not orthogonal, so you cannot use
-sqrt(R^2+G^2+B^2) formula
-b) for color differences there is more correct (but
-much more complex)
-[CIEDE2000](http://en.wikipedia.org/wiki/Color_difference#CIEDE2000) formula
-(which may easily blow up performance if used blindly) [2].
+#### Note about color differences
+
+Human eyes are sensitive to the primary colors in such a way that the simple
+Gaussian distance √(R²+G²+B²) gives poor results when trying to find the
+"nearest" available color as perceived by most humans.
+
+The [CIEDE2000](http://en.wikipedia.org/wiki/Color_difference#CIEDE2000)
+formula provides much better perceptual matching, but it is considerably more
+complex and may perform very slowly if used blindly [2].
 
 [2] https://github.com/neovim/neovim/issues/793#issuecomment-48106948
 
@@ -313,8 +315,8 @@ much more complex)
   https://sourceforge.net/p/materm/feature-requests/41/
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) -
   https://sourceforge.net/p/aterm/feature-requests/23/
-- [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (from Linux
-  kernel) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
+- [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (prior to
+  Linux 3.16) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
 - FreeBSD console - https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652
 - [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal - [issue #12](https://github.com/uobikiemukot/yaft/issues/12)
 - [KiTTY](http://www.9bis.net/kitty/) - **Windows platform**
