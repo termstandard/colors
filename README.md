@@ -56,12 +56,6 @@ According to Wikipedia[1], this behavior is only supported by xterm and konsole.
 
 [1] https://en.wikipedia.org/wiki/ANSI_color
 
-Since
-[ncurses-6.0-20180121](http://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
-terminfo began to support the 24-bit truecolor capability under the name of
-"RGB". You need to use the "setaf" and "setab" commands to set the foreground
-and background respectively.
-
 # Truecolor Detection
 
 [VTE](https://bugzilla.gnome.org/show_bug.cgi?id=754521),
@@ -75,9 +69,11 @@ repo).
 The S-Lang library has a check that `$COLORTERM` contains either "truecolor" or
 "24bit" (case sensitive).
 
-The "RGB" custom flag can be included in a terminfo entry, but ncurses
-currently does not provide a method for detecting the it; hopefully this will
-be resolved in an upcoming release.
+Terminfo has supported the 24-bit TrueColor capability since
+[ncurses-6.0-20180121](http://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
+under the name "RGB".
+You need to use the "setaf" and "setab" commands to set the foreground and
+background respectively.
 
 Having an extra environment variable (separate from `TERM`) is not ideal: by
 default it is not forwarded via sudo, ssh, etc, and so it may still be
