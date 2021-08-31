@@ -64,24 +64,55 @@ and background respectively.
 
 # True Color Detection
 
-There will be no reliable way to detect the "RGB" flag until the new release of
-terminfo/ncurses. S-Lang author added a check for `$COLORTERM` containing either
-"truecolor" or "24bit" (case sensitive). In addition,
 [VTE](https://bugzilla.gnome.org/show_bug.cgi?id=754521),
 [Konsole](https://bugs.kde.org/show_bug.cgi?id=371919) and
-[iTerm2](https://gitlab.com/gnachman/iterm2/issues/5294) set this variable to
-"truecolor". It has been in VTE for a while and but is relatively new, being
-still git-only in Konsole and iTerm2).
+[iTerm2](https://gitlab.com/gnachman/iterm2/issues/5294) all advertise
+truecolor support by placing `COLORTERM=truecolor` in the environment of the
+shell user's shell. This has been in VTE for a while, but is relatively new in
+Konsole and iTerm2 (you have to compile them yourself from the git source
+repo).
 
-This is obviously not a reliable method, and is not forwarded via sudo, SSH etc.
-However, whenever it errs, it errs on the safe side. It does not advertise
-support when it is actually unsupported. App developers can freely choose to
-check for this same variable, or introduce their own method (e.g. an option in
-their config file). They should use whichever method best matches the overall
-design of their app. Checking `$COLORTERM` is recommended though since it will
-lead to a more seamless desktop experience where only one variable needs to be
-set. This would be system-wide so that the user would not need to set it
-separately for each app.
+The S-Lang library has a check that `$COLORTERM` contains either "truecolor" or
+"24bit" (case sensitive).
+
+The "RGB" custom flag can be included in a terminfo entry, but ncurses
+currently does not provide a method for detecting the it; hopefully this will
+be resolved in an upcoming release.
+
+Having an extra environment variable (separate from `TERM`) is not ideal: by
+default it is not forwarded via sudo, ssh, etc, and so it may still be
+unreliable even where support is available in programs. (It does however err on
+the side of safety: it does not advertise support when it is not actually
+supported, and the programs should fall back to using 8-bit color.)
+
+These issues can be amelorated by adding `COLORTERM` to:
+* the `SendEnv` list in `/etc/ssh/ssh_config` on ssh clients;
+* the `AcceptEnv` list in `/etc/ssh/sshd_config` on ssh servers; and
+* the `env_keep` list in `/etc/sudoers`.
+
+Despite these problems, it's currently the best option, so checking
+`$COLORTERM` is recommended since it will lead to a more seamless desktop
+experience where only one variable needs to be set.
+
+App developers can freely choose to check for this variable, or introduce their
+own method (e.g. an option in their config file). They should use whichever
+method best matches the overall design of their app.
+
+Ideally any terminal that really supports truecolor would set this variable;
+but as a work-around you might need to put a check in `/etc/profile` to set
+`COLORTERM=truecolor` when `$TERM` matches any terminal type known to have
+working truecolor.
+
+```lang=sh
+case $TERM in
+  iterm            |\
+  linux-truecolor  |\
+  screen-truecolor |\
+  tmux-truecolor   |\
+  xterm-truecolor  )    export COLORTERM=truecolor ;;
+  vte*)
+esac
+```
 
 ## Querying The Terminal
 
