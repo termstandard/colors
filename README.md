@@ -116,11 +116,16 @@ esac
 
 ## Querying The Terminal
 
-A more reliable method in an interactive program which can read terminal
-responses, and one that is transparent to things like sudo, SSH, etc.. is to
-simply try setting a truecolor value and then query the terminal to ask what
-color it currently has. If the response replies the same color that was set
-then it indicates truecolor is supported.
+In an interactive program that can read terminal responses, a more reliable
+method is available, that is transparent to sudo & ssh.
+
+Simply try sending a truecolor value to the terminal, followed by a query to
+ask what color it currently has. If the response indicates the same color as
+was just set, then truecolor is supported.
+
+If the response indicates an 8-bit color, or does not indicate a color, or if
+no response is forthcoming within a few centiseconds, then assume that
+TrueColor is not supported.
 
 ```bash
 $ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd)
@@ -129,7 +134,7 @@ $ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd)
 00000000: 1b50 3124 7234 383a 323a 313a 323a 336d  .P1$r48:2:1:2:3m
 ```
 
-Here we ask to set the background color to `RGB(1,2,3)` - an unlikely default
+Here we set the background color to `RGB(1,2,3)` - an unlikely default
 choice - and request the value that we just set. The response comes back that
 the request was understood (`1`), and that the color is indeed `48:2:1:2:3`.
 This tells us also that the terminal supports the colon delimiter. If instead,
@@ -148,10 +153,10 @@ to set `48:2:1:2:3`.
 00000000: 1b50 3024 721b 5c0a                      .P0$r.\.
 ```
 
-This terminal did not even understand the DECRQSS request - its response was
-`0$r`. We do not learn if it managed to set the color, but since it doesn't
-understand how to reply to our request it is unlikely to support truecolor
-either.
+This terminal did not even understand the `DECRQSS` request - its response was
+`CSI`+`0$r`. This does not indicate whether it set the color, but since it
+doesn't understand how to reply to our request it is unlikely to support
+truecolor either.
 
 # Terminals + True Color
 
