@@ -255,8 +255,18 @@ truecolor either.
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
 
-Also, while this one is not a terminal, but a terminal re-player, it is
-still worth mentioning:
+### Multiplexers
+
+- [tmux](http://tmux.github.io/) - starting from version 2.2 (support since
+  [427b820...](https://github.com/tmux/tmux/commit/427b8204268af5548d09b830e101c59daa095df9))
+- [screen](http://git.savannah.gnu.org/cgit/screen.git/) - has support in
+  'master' branch, need to be enabled (see 'truecolor' option)
+- [pymux](https://github.com/jonathanslenders/pymux) - tmux clone in pure Python
+  (to enable truecolor run pymux with `--truecolor` option)
+- [dvtm](https://github.com/martanne/dvtm) - not yet supporting truecolor
+  https://github.com/martanne/dvtm/issues/10
+
+### Re-players
 
 - [asciinema](http://asciinema.org) player:
   https://github.com/asciinema/asciinema-player
@@ -287,17 +297,6 @@ much more complex)
 (which may easily blow up performance if used blindly) [2].
 
 [2] https://github.com/neovim/neovim/issues/793#issuecomment-48106948
-
-## Terminal multiplexers
-
-- [tmux](http://tmux.github.io/) - starting from version 2.2 (support since
-  [427b820...](https://github.com/tmux/tmux/commit/427b8204268af5548d09b830e101c59daa095df9))
-- [screen](http://git.savannah.gnu.org/cgit/screen.git/) - has support in
-  'master' branch, need to be enabled (see 'truecolor' option)
-- [pymux](https://github.com/jonathanslenders/pymux) - tmux clone in pure Python
-  (to enable truecolor run pymux with `--truecolor` option)
-- [dvtm](https://github.com/martanne/dvtm) - not yet supporting truecolor
-  https://github.com/martanne/dvtm/issues/10
 
 ## Not Supporting Truecolor
 
