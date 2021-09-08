@@ -249,7 +249,7 @@ truecolor either.
   - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
 - All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimiter: semicolon]
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
-  - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, macOS and Linux
+  - [Tabby](https://github.com/Eugeny/tabby): highly configurable terminal emulator for Windows, macOS and Linux
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
