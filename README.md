@@ -1,5 +1,7 @@
 # Terminal Colors
 
+_(Previously published and discussed at https://gist.github.com/XVilka/8346728.)_
+
 There exists common confusion about terminal colors. This is what we have right now:
 
 - Plain ASCII
