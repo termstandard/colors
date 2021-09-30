@@ -346,6 +346,7 @@ complex and may perform very slowly if used blindly [2].
   [682a5...](http://www.midnight-commander.org/changeset/682a5116edd20b8ba81743a1f7495c883b0ce644).
   See also [ticket #3724](http://www.midnight-commander.org/ticket/3724) for
   truecolor themes.
+- [vifm](https://github.com/vifm/vifm) file manager - since 0.12 version
 - [irssi](https://github.com/irssi/irssi) - since
   [PR #48](https://github.com/irssi/irssi/pull/48)
 - [neovim](https://github.com/neovim/neovim) - since commit
