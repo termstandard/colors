@@ -377,8 +377,9 @@ complex and may perform very slowly if used blindly [2].
   `ls` program that supports icons
 - [mpv](https://github.com/mpv-player/mpv) - video player with support of
   console-only output (since 0.22 version)
-- [radare2](https://github.com/radare/radare2) - reverse engineering framework;
+- [radare2](https://github.com/radareorg/radare2) - reverse engineering framework;
   since 0.9.6 version.
+- [rizin](https://github.com/rizinorg/rizin) - reverse engineering framework; since the inception (a fork of radare2).
 
 ## Console Programs Not Supporting Truecolor
 
