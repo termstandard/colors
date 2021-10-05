@@ -85,7 +85,7 @@ unreliable even where support is available in programs. (It does however err on
 the side of safety: it does not advertise support when it is not actually
 supported, and the programs should fall back to using 8-bit color.)
 
-These issues can be amelorated by adding `COLORTERM` to:
+These issues can be ameliorated by adding `COLORTERM` to:
 * the `SendEnv` list in `/etc/ssh/ssh_config` on ssh clients;
 * the `AcceptEnv` list in `/etc/ssh/sshd_config` on ssh servers; and
 * the `env_keep` list in `/etc/sudoers`.
