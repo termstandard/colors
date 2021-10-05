@@ -31,7 +31,7 @@ printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
 
 - or
   https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh
-- or http://github.com/robertknight/konsole/tree/master/tests/color-spaces.pl
+- or https://github.com/robertknight/konsole/tree/master/tests/color-spaces.pl
 - or https://git.gnome.org/browse/vte/tree/perf/img.sh
 - or just run this:
 
@@ -74,7 +74,7 @@ The S-Lang library has a check that `$COLORTERM` contains either "truecolor" or
 "24bit" (case sensitive).
 
 Terminfo has supported the 24-bit TrueColor capability since
-[ncurses-6.0-20180121](http://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
+[ncurses-6.0-20180121](https://lists.gnu.org/archive/html/bug-ncurses/2018-01/msg00045.html),
 under the name "RGB".
 You need to use the "setaf" and "setab" commands to set the foreground and
 background respectively.
@@ -166,12 +166,12 @@ truecolor either.
 
 - [xterm](https://invisible-island.net/xterm/) - (from
   [331 (change 330j)](https://invisible-island.net/xterm/xterm.log.html#xterm_331)
-- [st](http://st.suckless.org/) (from suckless) [delimiter: semicolon] -
-  http://lists.suckless.org/dev/1307/16688.html
-- [xst](https://github.com/gnotclub/xst/) - fork of st
-- [konsole](http://kde.org/applications/system/konsole/) [delimiter: colon,
+- [st](https://st.suckless.org/) (from suckless) [delimiter: semicolon] -
+  https://lists.suckless.org/dev/1307/16688.html
+- [xst](https://github.com/gnotclub/xst) - fork of st
+- [konsole](https://konsole.kde.org/) [delimiter: colon,
   semicolon] - https://bugs.kde.org/show_bug.cgi?id=107487
-- [iTerm2](http://www.iterm2.com/) [delimiter: colon, semicolon] - since v3
+- [iTerm2](https://iterm2.com/) [delimiter: colon, semicolon] - since v3
   version
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork
   of iTerm2
@@ -193,7 +193,7 @@ truecolor either.
   semicolon] - cross-platform, HTML/CSS/JS-based
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) -
   HTML/CSS/JS-based (ChromeOS)
-- [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) -
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) -
   [landed](https://git.tartarus.org/?p=simon/putty.git;a=commit;h=a4cbd3dfdb71d258e83bbf5b03a874c06d0b3106)
   in git (patched version [3] {approximation to 256 colors} and [4]
   {real truecolors} available) - **Windows platform**
@@ -209,40 +209,40 @@ truecolor either.
 - [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimiter:
   semicolon] Built-in Windows shell that is mostly unchanged since DOS **Windows 10**
 - [FinalTerm](http://finalterm.org/) [delimiter: semicolon] -
-  **[abandoned](http://worldwidemann.com/finally-terminated/)**, iTerm2
-  [borrowing it's ideas and features](http://iterm2.com/shell_integration.html).
+  **[abandoned](https://worldwidemann.com/finally-terminated/)**, iTerm2
+  [borrowing it's ideas and features](https://iterm2.com/documentation-shell-integration.html).
 - [MacTerm](https://github.com/kmgrant/macterm) [delimiter: semicolon] - **Mac
   OS X platform**
 - [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and
   MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb)
   (2.0.1 release) - **Windows platform**
-- [MobaXterm](http://mobaxterm.mobatek.net/) **Windows platform** - closed
+- [MobaXterm](https://mobaxterm.mobatek.net/) **Windows platform** - closed
   source (run `lscolors` to see a truecolor test)
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed
   source since
-  [7.19.0 version](http://www.emtec.com/downloads/zoc/zoc_changes.txt)
+  [7.19.0 version](https://www.emtec.com/downloads/zoc/zoc_changes.txt)
 - [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* -
   A terminal emulator for the 21st century.
 - Windows 10 bash console, since
   [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
-- All [libvte](http://ftp.gnome.org/pub/GNOME/sources/vte/) based terminals
+- All [libvte](https://download.gnome.org/sources/vte/) based terminals
   (since 0.36 version) [delimiter: colon, semicolon] -
   https://bugzilla.gnome.org/show_bug.cgi?id=704449
   - **libvte**-based
     [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
-  - **libvte**-based [sakura](http://www.pleyades.net/david/projects/sakura)
+  - **libvte**-based [sakura](https://www.pleyades.net/david/projects/sakura)
   - **libvte**-based
-    [xfce4-terminal](http://docs.xfce.org/apps/terminal/start) - since
+    [xfce4-terminal](https://docs.xfce.org/apps/terminal/start) - since
     [0.6.90](https://github.com/xfce-mirror/xfce4-terminal/releases/tag/xfce4-terminal-0.6.90)
     release, if compiled with GTK+3
   - **libvte**-based
-    [Terminator](http://gnometerminator.blogspot.com/p/introduction.html) -
+    [Terminator](https://gnometerminator.blogspot.com/p/introduction.html) -
     since [1.90](https://launchpad.net/terminator/+announcement/14358) release
   - **libvte**-based [Tilix](https://github.com/gnunn1/tilix) - written in D.
     Similar user interface as for Terminator.
-  - **libvte**-based [Lilyterm](http://lilyterm.luna.com.tw/) - since commit [72536e7ba448ad9ef1126ce45fbde3a3407a271b](https://github.com/Tetralet/LilyTerm/commit/72536e7ba448ad9ef1126ce45fbde3a3407a271b)
+  - **libvte**-based [Lilyterm](https://lilyterm.luna.com.tw/) - since commit [72536e7ba448ad9ef1126ce45fbde3a3407a271b](https://github.com/Tetralet/LilyTerm/commit/72536e7ba448ad9ef1126ce45fbde3a3407a271b)
   - **libvte**-based [ROXTerm](http://roxterm.sourceforge.net/)
-  - **libvte**-based [evilvte](http://www.calno.com/evilvte/) - no release yet,
+  - **libvte**-based [evilvte](https://www.calno.com/evilvte/) - no release yet,
     version from git https://github.com/caleb-/evilvte
   - **libvte**-based [Termit](https://github.com/nonstop/termit)
   - **libvte**-based [Termite](https://github.com/thestinger/termite) ([NOT MAINTAINED](https://github.com/thestinger/termite/issues/760))
@@ -250,7 +250,7 @@ truecolor either.
   - **libvte**-based [tinyterm](https://code.google.com/p/tinyterm)
   - **libvte**-based
     [Pantheon Terminal](https://launchpad.net/pantheon-terminal)
-  - **libvte**-based [lxterminal](http://sourceforge.net/projects/lxde) - with
+  - **libvte**-based [lxterminal](https://sourceforge.net/projects/lxde) - with
     **--enable-gtk3** configure flag.
   - **libvte**-based [guake](http://guake-project.org/) - A top-down terminal for GNOME
 - All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimiter: semicolon]
@@ -263,9 +263,9 @@ another section.
 
 ### Multiplexers
 
-- [tmux](http://tmux.github.io/) - starting from version 2.2 (support since
+- [tmux](https://tmux.github.io/) - starting from version 2.2 (support since
   [427b820...](https://github.com/tmux/tmux/commit/427b8204268af5548d09b830e101c59daa095df9))
-- [screen](http://git.savannah.gnu.org/cgit/screen.git/) - has support in
+- [screen](https://git.savannah.gnu.org/cgit/screen.git/) - has support in
   'master' branch, need to be enabled (see 'truecolor' option)
 - [pymux](https://github.com/jonathanslenders/pymux) - tmux clone in pure Python
   (to enable truecolor run pymux with `--truecolor` option)
@@ -274,7 +274,7 @@ another section.
 
 ### Re-players
 
-- [asciinema](http://asciinema.org) player:
+- [asciinema](https://asciinema.org/) player:
   https://github.com/asciinema/asciinema-player
 
 ## Partial Support
@@ -283,7 +283,7 @@ These terminal emulators parse ANSI color sequences, but approximate the true
 color using a palette or limit number of true colors that can be used at the
 same time. A 256-color (8-bit) palette is used unless specified.
 
-- [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
+- [mlterm](http://mlterm.sourceforge.net/) - built with **--with-gtk=3.0**
   configure flag. Approximates colors using a 512-color embedded palette
   (https://sourceforge.net/p/mlterm/bugs/74/)
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
@@ -299,7 +299,7 @@ Human eyes are sensitive to the primary colors in such a way that the simple
 Gaussian distance √(R²+G²+B²) gives poor results when trying to find the
 "nearest" available color as perceived by most humans.
 
-The [CIEDE2000](http://en.wikipedia.org/wiki/Color_difference#CIEDE2000)
+The [CIEDE2000](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000)
 formula provides much better perceptual matching, but it is considerably more
 complex and may perform very slowly if used blindly [2].
 
@@ -324,13 +324,13 @@ complex and may perform very slowly if used blindly [2].
   Linux 3.16) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
 - FreeBSD console - https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652
 - [yaft](https://github.com/uobikiemukot/yaft) framebuffer terminal - [issue #12](https://github.com/uobikiemukot/yaft/issues/12)
-- [KiTTY](http://www.9bis.net/kitty/) - **Windows platform**
-- [MTPuTTY](ttyplus.com) - **Windows platform**
+- [KiTTY](https://www.9bis.net/kitty/) - **Windows platform**
+- [MTPuTTY](https://ttyplus.com/) - **Windows platform**
 - [mRemoteNG](https://mremoteng.org/) - **Windows platform** - [issue #717](https://github.com/mRemoteNG/mRemoteNG/issues/717)
 - [JuiceSSH](https://juicessh.com/) - **Android platform**, closed source
 - [Termius](https://www.termius.com/) - **Linux, Windows, OS X platforms**,
   closed source
-- [SmarTTY](http://smartty.sysprogs.com/) - **Windows platform** - closed source
+- [SmarTTY](https://sysprogs.com/SmarTTY/) - **Windows platform** - closed source
   (sent them a request)
 - [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) -
   closed source (sent them an email)
@@ -342,14 +342,14 @@ complex and may perform very slowly if used blindly [2].
 
 ## Console Programs Supporting Truecolor
 
-- [s-lang](http://lists.jedsoft.org/lists/slang-users/2015/0000020.html)
+- [s-lang](https://lists.jedsoft.org/lists/slang-users/2015/0000020.html)
   library - (since pre2.3.1-35, for 64bit systems)
 - [ncurses](https://www.gnu.org/software/ncurses/) library - since 6.1 version
 - [Eternal Terminal](https://mistertea.github.io/EternalTCP/) - automatically
   reconnecting shell
-- [mc](http://www.midnight-commander.org) - since
-  [682a5...](http://www.midnight-commander.org/changeset/682a5116edd20b8ba81743a1f7495c883b0ce644).
-  See also [ticket #3724](http://www.midnight-commander.org/ticket/3724) for
+- [mc](https://midnight-commander.org/) - since
+  [682a5...](https://midnight-commander.org/changeset/682a5116edd20b8ba81743a1f7495c883b0ce644).
+  See also [ticket #3724](https://midnight-commander.org/ticket/3724) for
   truecolor themes.
 - [vifm](https://github.com/vifm/vifm) file manager - since 0.12 version
 - [irssi](https://github.com/irssi/irssi) - since
@@ -370,8 +370,8 @@ complex and may perform very slowly if used blindly [2].
 - [micro editor](https://micro-editor.github.io/)
 - [dte](https://gitlab.com/craigbarnes/dte) text editor - (since
   [version 1.8](https://craigbarnes.gitlab.io/dte/releases.html#v1.8))
-- [elinks](http://repo.or.cz/w/elinks.git) -
-  [configure.in:1410](http://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410)
+- [elinks](https://repo.or.cz/w/elinks.git) -
+  [configure.in:1410](https://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410)
   (./configure --enable-true-color)
 - [tcell](https://github.com/gdamore/tcell) library for Go language
 - [timg](https://github.com/hzeller/timg) - Terminal Image Viewer
@@ -390,11 +390,11 @@ complex and may perform very slowly if used blindly [2].
 
 ## Console Programs Not Supporting Truecolor
 
-- [mutt](http://mutt.org) (email client) - http://dev.mutt.org/trac/ticket/3674
+- [mutt](http://mutt.org/) (email client) - http://dev.mutt.org/trac/ticket/3674
 - [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
 - [termbox](https://github.com/nsf/termbox) library - [issue #37](https://github.com/nsf/termbox/issues/37) (there is a fork [termbox_next](https://github.com/cylgom/termbox_next) with the support
-- [https://bitbucket.org/McKael/mcabber-crew](mcabber) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
-- [tig](https://github.com/jonas/tig/) (git TUI) - [issue #227](https://github.com/jonas/tig/issues/227)
+- [mcabber](https://mcabber.com/) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
+- [tig](https://github.com/jonas/tig) (git TUI) - [issue #227](https://github.com/jonas/tig/issues/227)
 - [cmus](https://github.com/cmus/cmus) (music player) - [issue #799](https://github.com/cmus/cmus/issues/799)
 - [weechat](https://github.com/weechat/weechat) (chat client) - [issue #1364](https://github.com/weechat/weechat/issues/1364)
 - [scim](https://github.com/andmarti1424/sc-im) (spreadsheet program) - [issue #306](https://github.com/andmarti1424/sc-im/issues/306)
