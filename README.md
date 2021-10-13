@@ -178,6 +178,8 @@ truecolor either.
   written in Rust
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] -
   uses OpenGL
+- [foot](https://codeberg.org/dnkl/foot) [delimiter: colon, semicolon] -
+  Wayland terminal
 - [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimiter:
   semicolon]
 - [mosh](https://mosh.org/) (Mobile SHell) [delimiter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
@@ -365,6 +367,8 @@ complex and may perform very slowly if used blindly [2].
 - [emacs](https://www.gnu.org/software/emacs/) - since
   [26.1 release](https://lists.gnu.org/archive/html/emacs-devel/2018-05/msg00765.html)
 - [micro editor](https://micro-editor.github.io/)
+- [dte](https://gitlab.com/craigbarnes/dte) text editor - (since
+  [version 1.8](https://craigbarnes.gitlab.io/dte/releases.html#v1.8))
 - [elinks](http://repo.or.cz/w/elinks.git) -
   [configure.in:1410](http://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410)
   (./configure --enable-true-color)
