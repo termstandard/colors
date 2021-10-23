@@ -164,6 +164,8 @@ truecolor either.
 
 ### Terminal Emulators
 
+- [xterm](https://invisible-island.net/xterm/) - (from
+  [331 (change 330j)](https://invisible-island.net/xterm/xterm.log.html#xterm_331)
 - [st](http://st.suckless.org/) (from suckless) [delimiter: semicolon] -
   http://lists.suckless.org/dev/1307/16688.html
 - [xst](https://github.com/gnotclub/xst/) - fork of st
@@ -191,7 +193,7 @@ truecolor either.
   HTML/CSS/JS-based (ChromeOS)
 - [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) -
   [landed](https://git.tartarus.org/?p=simon/putty.git;a=commit;h=a4cbd3dfdb71d258e83bbf5b03a874c06d0b3106)
-  in git (patched version [3] {xterm-like approximation to 256 colors} and [4]
+  in git (patched version [3] {approximation to 256 colors} and [4]
   {real truecolors} available) - **Windows platform**
 - [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon,
   semicolon] - **Windows platform**
@@ -281,8 +283,6 @@ color using a palette. A 256-color (8-bit) palette is used unless specified.
 - [mlterm](http://mlterm.sourceforge.net) - built with **--with-gtk=3.0**
   configure flag. Approximates colors using a 512-color embedded palette
   (https://sourceforge.net/p/mlterm/bugs/74/)
-- xterm (but doing it wrong: "it uses nearest color in RGB color space,
-  with a usual false assumption about orthogonal axes")
 - [urxvt aka rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) -
   since
   [revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down)
