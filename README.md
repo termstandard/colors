@@ -346,6 +346,7 @@ complex and may perform very slowly if used blindly [2].
 - [s-lang](https://lists.jedsoft.org/lists/slang-users/2015/0000020.html)
   library - (since pre2.3.1-35, for 64bit systems)
 - [ncurses](https://www.gnu.org/software/ncurses/) library - since 6.1 version
+- [Notcurses](https://notcurses.com/) library - all releases
 - [Eternal Terminal](https://mistertea.github.io/EternalTCP/) - automatically
   reconnecting shell
 - [mc](https://midnight-commander.org/) - since
