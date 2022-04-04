@@ -200,7 +200,7 @@ truecolor either.
   {real truecolors} available) - **Windows platform**
 - [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon,
   semicolon] - **Windows platform**
-- [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] -
+- [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] - written in Rust
   **Windows platform**
 - [Windows
   Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1)
@@ -217,6 +217,7 @@ truecolor either.
 - [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and
   MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb)
   (2.0.1 release) - **Windows platform**
+- [wezterm](https://wezfurlong.org/wezterm/) [delimeter: colon] - written in Rust
 - [MobaXterm](https://mobaxterm.mobatek.net/) **Windows platform** - closed
   source (run `lscolors` to see a truecolor test)
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed
