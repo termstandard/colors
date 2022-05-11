@@ -292,7 +292,7 @@ same time. A 256-color (8-bit) palette is used unless specified.
   [revision 1.570](http://cvs.schmorp.de/rxvt-unicode/src/command.C?revision=1.570&view=markup&sortby=log&sortdir=down).
   Limits maximum number of colors:
   http://lists.schmorp.de/pipermail/rxvt-unicode/2016q2/002261.html
-- Linux console ([fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
+- Linux console ([fbcon](https://www.kernel.org/doc/html/latest/fb/fbcon.html)), [since v3.16](https://github.com/torvalds/linux/commit/cec5b2a97a11ade56a701e83044d0a2a984c67b4) - https://bugzilla.kernel.org/show_bug.cgi?id=79551 (downgraded to 16 foregrounds and 8 backgrounds)
 
 #### Note about color differences
 
