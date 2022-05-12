@@ -200,7 +200,7 @@ truecolor either.
   {real truecolors} available) - **Windows platform**
 - [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon,
   semicolon] - **Windows platform**
-- [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] - written in Rust
+- [ConEmu](https://github.com/Maximus5/ConEmu) [delimiter: semicolon] -
   **Windows platform**
 - [Windows
   Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1)
