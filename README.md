@@ -258,6 +258,9 @@ truecolor either.
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
   - [Tabby](https://github.com/Eugeny/tabby): highly configurable terminal emulator for Windows, macOS and Linux
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
+- [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) -
+  Xshell7/ Xshell6 >= Build 0181
+  (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software) 
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
@@ -333,8 +336,6 @@ complex and may perform very slowly if used blindly [2].
   closed source
 - [SmarTTY](https://sysprogs.com/SmarTTY/) - **Windows platform** - closed source
   (sent them a request)
-- [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) -
-  closed source (sent them an email)
 - libvte and GTK2 - based:
   - **libvte**-based [GTKTerm2](http://gtkterm.feige.net/)
   - **libvte**-based [stjerm](https://github.com/stjerm/stjerm) (looks abandoned) - [issue #39](https://github.com/stjerm/stjerm/issues/39)
