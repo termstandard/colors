@@ -33,6 +33,7 @@ printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
   https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh
 - or https://github.com/robertknight/konsole/tree/master/tests/color-spaces.pl
 - or https://git.gnome.org/browse/vte/tree/perf/img.sh
+- or https://gist.github.com/lilydjwg/fdeaf79e921c2f413f44b6f613f6ad53
 - or just run this:
 
 ```sh
