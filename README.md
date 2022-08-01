@@ -23,18 +23,16 @@ colors at the same time.
 Truecolor escape codes do not use a color palette. They just specify the
 color directly.
 
-This is a good test case:
+For a quick check of your terminal, run:
 
 ```bash
 printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
 ```
 
-- or
-  https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh
-- or https://github.com/robertknight/konsole/tree/master/tests/color-spaces.pl
-- or https://git.gnome.org/browse/vte/tree/perf/img.sh
-- or [gist/lilydjwg/colors.py](https://gist.github.com/lilydjwg/fdeaf79e921c2f413f44b6f613f6ad53)
-- or just run this:
+which will print <span style="color:#ff6400">TRUECOLOR</span> in brown if it
+understands Xterm-style true-color escapes.
+
+For a more thorough test, run:
 
 ```sh
 awk 'BEGIN{
@@ -50,6 +48,39 @@ awk 'BEGIN{
     }
     printf "\n";
 }'
+```
+
+Some other tests:
+
+- [gist/lilydjwg/colors.py](https://gist.github.com/lilydjwg/fdeaf79e921c2f413f44b6f613f6ad53)
+- https://github.com/robertknight/konsole/tree/master/tests/color-spaces.pl
+- https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
+- https://git.gnome.org/browse/vte/tree/perf/img.sh
+
+You can download these scripts and inspect them before running them, by:
+
+```bash
+# make a sandbox
+mkdir tmp$$
+cd tmp$$
+
+# downloads scripts
+wget https://github.com/robertknight/konsole/raw/master/tests/color-spaces.pl \
+     https://gist.github.com/lilydjwg/fdeaf79e921c2f413f44b6f613f6ad53/raw/94d8b2be62657e96488038b0e547e3009ed87d40/colors.py \
+     https://github.com/JohnMorales/dotfiles/raw/master/colors/24-bit-color.sh \
+     https://gitlab.gnome.org/GNOME/vte/-/raw/master/perf/img.sh
+
+# read the scripts with your editor
+$EDITOR *
+```
+<span style="color:#c00">Stop!</span>
+Only if you're satisfied that the scripts are trustworthy should you proceed:
+```bash
+# if you trust them, run them
+perl color-spaces.pl
+python colors.py
+bash 24-bit-color.sh
+bash img.sh
 ```
 
 Keep in mind that it is possible to use both ';' and ':' as Control Sequence
