@@ -336,7 +336,9 @@ complex and may perform very slowly if used blindly [2].
 - [rizin](https://github.com/rizinorg/rizin) - reverse engineering framework; since the inception (a fork of radare2).
 - [s-lang](https://lists.jedsoft.org/lists/slang-users/2015/0000020.html) library - (since pre2.3.1-35, for 64bit systems)
 - [tcell](https://github.com/gdamore/tcell) library for Go language
+- [Tui Widgets](https://tuiwidgets.namepad.de) library (C++/QtCore) - all releases
 - [termimage](https://github.com/nabijaczleweli/termimage) - terminal image viewer
+- [termpaint](https://termpaint.namepad.de) low level library (C) - all releases
 - [timg](https://github.com/hzeller/timg) - Terminal Image Viewer
 - [tv](https://github.com/daleroberts/tv) - tool to quickly view high-resolution multi-band imagery directly in terminal
 - [vifm](https://github.com/vifm/vifm) file manager - since 0.12 version
