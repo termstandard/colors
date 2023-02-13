@@ -293,7 +293,8 @@ truecolor either.
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
 - [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) -
   Xshell7/ Xshell6 >= Build 0181
-  (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software) 
+  (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software)
+- [Warp](https://github.com/warpdotdev/Warp) - **MacOS X platform** written in Rust
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
