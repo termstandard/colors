@@ -208,7 +208,7 @@ truecolor either.
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork
   of iTerm2
 - [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - after version 0.14.1 ([issue #78](https://github.com/qterminal/qterminal/issues/78))
-- [alacritty](https://github.com/jwilm/alacritty) [delimiter: semicolon] -
+- [alacritty](https://github.com/jwilm/alacritty) [delimiter: colon, semicolon] -
   written in Rust
 - [Contour](https://github.com/contour-terminal/contour) [delimiter: semicolon] - written in C++17, uses OpenGL
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] -
