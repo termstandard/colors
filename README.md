@@ -348,8 +348,6 @@ complex and may perform very slowly if used blindly [2].
 - [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology)
   (Enlightenment) - https://phab.enlightenment.org/T746
-- [Hyper.app](https://hyper.is/) [delimiter: semicolon] - cross-platform,
-  HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 - [Cmder](https://cmder.net/): Portable console emulator for Windows,
   based on ConEmu.
 - [Terminus](https://github.com/Eugeny/terminus):
