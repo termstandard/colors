@@ -239,8 +239,8 @@ truecolor either.
   [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
 - [PowerShell Core](https://github.com/PowerShell/PowerShell) [delimiter:
   semicolon] aka PowerShell 6+ **Windows 10**
-- [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) [delimiter:
-  semicolon] Built-in Windows shell that is mostly unchanged since DOS **Windows 10**
+- [ConHost](https://en.wikipedia.org/wiki/Windows_Console) [delimiter:
+  semicolon] Built-in Windows console (usually hosting cmd.exe) that is mostly unchanged since DOS **Windows 10**
 - [FinalTerm](http://finalterm.org/) [delimiter: semicolon] -
   **[abandoned](https://worldwidemann.com/finally-terminated/)**, iTerm2
   [borrowing it's ideas and features](https://iterm2.com/documentation-shell-integration.html).
