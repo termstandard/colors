@@ -57,6 +57,7 @@ Some other tests:
 - https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
 - https://git.gnome.org/browse/vte/tree/perf/img.sh
 
+<div style="padding-left: 2rem; border: 1px solid #9cf;">
 You can download these scripts and inspect them before running them, by:
 
 ```bash
@@ -82,6 +83,7 @@ python colors.py
 bash 24-bit-color.sh
 bash img.sh
 ```
+</div>
 
 Keep in mind that it is possible to use both ';' and ':' as Control Sequence
 delimiters.
