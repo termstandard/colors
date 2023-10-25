@@ -162,10 +162,10 @@ no response is forthcoming within a few centiseconds, then assume that
 truecolor is not supported.
 
 ```bash
-$ (echo -e '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd)
+$ ( printf '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd -g1 )
 
 ^[P1$r48:2:1:2:3m^[\
-00000000: 1b50 3124 7234 383a 323a 313a 323a 336d  .P1$r48:2:1:2:3m
+00000000: 1b 50 31 24 72 34 38 3a 32 3a 31 3a 32 3a 33 6d  .P1$r48:2:1:2:3m
 ```
 
 Here we set the background color to `RGB(1,2,3)` - an unlikely default
@@ -176,15 +176,16 @@ the terminal did not support truecolor we might see a response like
 
 ```
 ^[P1$r40m^[\
-00000000: 1b50 3124 7234 306d 1b5c 0a              .P1$r40m.\.
+00000000: 1b 50 31 24 72 34 30 6d 1b 5c 0a              .P1$r40m.\.
 ```
+
 
 This terminal replied that the color is `40` - it has not accepted our request
 to set `48:2:1:2:3`.
 
 ```
 ^[P0$r^[\
-00000000: 1b50 3024 721b 5c0a                      .P0$r.\.
+00000000: 1b 50 30 24 72 1b 5c 0a                      .P0$r.\.
 ```
 
 This terminal did not even understand the `DECRQSS` request - its response was
