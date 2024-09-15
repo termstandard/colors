@@ -337,7 +337,9 @@ complex and may perform very slowly if used blindly [2].
 - [s-lang](https://lists.jedsoft.org/lists/slang-users/2015/0000020.html) library - (since pre2.3.1-35, for 64bit systems)
 - [tcell](https://github.com/gdamore/tcell) library for Go language
 - [termimage](https://github.com/nabijaczleweli/termimage) - terminal image viewer
+- [termpaint](https://termpaint.namepad.de) low level library (C) - all releases
 - [timg](https://github.com/hzeller/timg) - Terminal Image Viewer
+- [Tui Widgets](https://tuiwidgets.namepad.de) library (C++/QtCore) - all releases
 - [tv](https://github.com/daleroberts/tv) - tool to quickly view high-resolution multi-band imagery directly in terminal
 - [vifm](https://github.com/vifm/vifm) file manager - since 0.12 version
 - [vim](https://github.com/vim/vim) - (from 7.4.1770); need to set [termguicolors](https://github.com/vim/vim/blob/master/runtime/doc/version8.txt#L202) to enable truecolor.
