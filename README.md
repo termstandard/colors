@@ -343,6 +343,7 @@ complex and may perform very slowly if used blindly [2].
 - [tv](https://github.com/daleroberts/tv) - tool to quickly view high-resolution multi-band imagery directly in terminal
 - [vifm](https://github.com/vifm/vifm) file manager - since 0.12 version
 - [vim](https://github.com/vim/vim) - (from 7.4.1770); need to set [termguicolors](https://github.com/vim/vim/blob/master/runtime/doc/version8.txt#L202) to enable truecolor.
+- [clifm](https://github.com/leo-arch/clifm) - The command line file manager
 
 ## Console Programs Not Supporting Truecolor
 
