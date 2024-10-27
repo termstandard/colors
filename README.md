@@ -224,6 +224,8 @@ truecolor either.
 - [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - after version 0.14.1 ([issue #78](https://github.com/qterminal/qterminal/issues/78))
 - [st](https://st.suckless.org/) (from suckless) [delimiter: semicolon] - https://lists.suckless.org/dev/1307/16688.html
 - [Tera Term](http://en.sourceforge.jp/projects/ttssh2/) [delimiter: colon, semicolon] - **Windows platform**
+- All [TerminalCtrl](https://github.com/ismail-yilmaz/Terminal) based terminal emulators.
+  - [Bobcat](https://github.com/ismail-yilmaz/Bobcat) [delimiter: colon, semicolon] - a cross-platform terminal emulator, written in [U++](https://github.com/ultimatepp/ultimatepp) (C++ framework).
 - [Termux](https://termux.com/) [delimiter: semicolon] - **Android platform**
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork of iTerm2
 - [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* - A terminal emulator for the 21st century.
