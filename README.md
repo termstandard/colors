@@ -297,6 +297,7 @@ complex and may perform very slowly if used blindly [2].
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) - https://sourceforge.net/p/aterm/feature-requests/23/
 - [Cmder](https://cmder.net/): Portable console emulator for Windows, based on ConEmu.
 - [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (prior to Linux 3.16) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
+- [frecon](https://chromium.googlesource.com/chromiumos/platform/frecon/) - Console that is part of ChromeOS kernel
 - [FreeBSD console](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652)
 - [Hyper.app](https://hyper.is/) [delimiter: semicolon] - cross-platform, HTML/CSS/JS-based (Electron) https://github.com/zeit/hyper/issues/2294
 - [JuiceSSH](https://juicessh.com/) - **Android platform**, closed source
