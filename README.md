@@ -209,6 +209,7 @@ truecolor either.
 - [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimiter: semicolon]
 - [FinalTerm](http://finalterm.org/) [delimiter: semicolon] - **[abandoned](https://worldwidemann.com/finally-terminated/)**, iTerm2 [borrowing it's ideas and features](https://iterm2.com/documentation-shell-integration.html).
 - [foot](https://codeberg.org/dnkl/foot) [delimiter: colon, semicolon] - Wayland terminal
+- [ghostty](https://ghostty.org/) [delimiter: semicolon] - written in Zig
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) - HTML/CSS/JS-based (ChromeOS)
 - [iTerm2](https://iterm2.com/) [delimiter: colon, semicolon] - since v3 version
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] - uses OpenGL
