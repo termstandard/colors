@@ -209,6 +209,7 @@ truecolor either.
 - [cool-retro-term](https://github.com/Swordfish90/cool-retro-term) [delimiter: semicolon]
 - [FinalTerm](http://finalterm.org/) [delimiter: semicolon] - **[abandoned](https://worldwidemann.com/finally-terminated/)**, iTerm2 [borrowing it's ideas and features](https://iterm2.com/documentation-shell-integration.html).
 - [foot](https://codeberg.org/dnkl/foot) [delimiter: colon, semicolon] - Wayland terminal
+- [Ghostty](https://ghostty.org) - Cross-Platform terminal
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) - HTML/CSS/JS-based (ChromeOS)
 - [iTerm2](https://iterm2.com/) [delimiter: colon, semicolon] - since v3 version
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] - uses OpenGL
@@ -323,6 +324,7 @@ complex and may perform very slowly if used blindly [2].
 - [emacs](https://www.gnu.org/software/emacs/) - since [26.1 release](https://lists.gnu.org/archive/html/emacs-devel/2018-05/msg00765.html)
 - [Eternal Terminal](https://mistertea.github.io/EternalTCP/) - automatically reconnecting shell
 - [explosion](https://github.com/Tenzer/explosion) - terminal image viewer
+- [Helix Editor](https://helix-editor.com) - low-configuration modal text editor
 - [irssi](https://github.com/irssi/irssi) - since [PR #48](https://github.com/irssi/irssi/pull/48)
 - [joe](https://sf.net/p/joe-editor) - (from [4.5](https://sourceforge.net/p/joe-editor/news/2017/09/joe-45-released/) version)
 - [ls-icons](https://github.com/sebastiencs/ls-icons) - fork of coreutils with `ls` program that supports icons
