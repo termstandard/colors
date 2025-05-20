@@ -234,6 +234,7 @@ truecolor either.
 - [wezterm](https://wezfurlong.org/wezterm/) [delimeter: colon] - written in Rust
 - Windows 10 bash console, since [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - [Windows Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1) [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
+- [Windows Terminal](https://github.com/microsoft/terminal) [delimiter: semicolon] - official, modern terminal emulator for Windows
 - [xst](https://github.com/gnotclub/xst) - fork of st
 - [xterm](https://invisible-island.net/xterm/) - (from [331 (change 330j)](https://invisible-island.net/xterm/xterm.log.html#xterm_331)
 - All [libvte](https://download.gnome.org/sources/vte/) based terminals (since 0.36 version) [delimiter: colon, semicolon] - https://bugzilla.gnome.org/show_bug.cgi?id=704449
