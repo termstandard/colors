@@ -322,6 +322,7 @@ complex and may perform very slowly if used blindly [2].
 
 ## Console Programs Supporting Truecolor
 
+- [clifm](https://github.com/leo-arch/clifm) - The command line file manager
 - [dte](https://gitlab.com/craigbarnes/dte) text editor - (since [version 1.8](https://craigbarnes.gitlab.io/dte/releases.html#v1.8))
 - [elinks](https://repo.or.cz/w/elinks.git) - [configure.in:1410](https://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410) (./configure --enable-true-color)
 - [emacs](https://www.gnu.org/software/emacs/) - since [26.1 release](https://lists.gnu.org/archive/html/emacs-devel/2018-05/msg00765.html)
