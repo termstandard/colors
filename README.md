@@ -4,14 +4,12 @@ _(Previously published and discussed at https://gist.github.com/XVilka/8346728.)
 
 There exists common confusion about terminal colors. This is what we have right now:
 
-- Plain ASCII
-- ANSI escape codes: 16 color codes with bold/italic and background
-- 256 color palette: 216 colors + 16 ANSI + 24 gray (colors are 24-bit)
-- 24-bit truecolor: "888" colors (aka 16 million)
-
-```bash
-printf "\x1b[${bg};2;${red};${green};${blue}m\n"
-```
+- Plain ASCII without color controls;
+- Using ANSI escape sequences:
+  - 8 colors, plus bright and dim foreground
+  - 16 colors (same as 8 colors plus corresponding bright versions)
+  - 256-color palette: 216 colors + 8 ANSI + 24 gray (color palette entries are typically 24-bit)
+  - 24-bit truecolor: "888" colors (aka 16 million)
 
 The 256-color palette is configured at start and is a 666-cube of colors,
 each of them defined as a 24-bit (888 RGB) color.
@@ -25,8 +23,14 @@ color directly.
 
 For a quick check of your terminal, run:
 
+
 ```bash
-printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
+bg=1  # background
+bg=0  # foreground
+red=255
+green=100
+blue=0
+printf '\e[%u;2;%u;%u;%um%s\e[m\n' $(( bg ? 48 : 38 )) "$red" "$green" "$blue" TRUECOLOR
 ```
 
 which will print <span style="color:#ff6400">TRUECOLOR</span> in brown if it
