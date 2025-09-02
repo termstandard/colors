@@ -137,18 +137,16 @@ own method (e.g. an option in their config file). They should use whichever
 method best matches the overall design of their app.
 
 Ideally any terminal that really supports truecolor would set this variable;
-but as a work-around you might need to put a check in `/etc/profile` to set
+but as a work-around you might need to put a check in your shell's start-up file
+(e.g. `/etc/profile` or `~/.profile` or `~/.bashrc` or `~/.zshrc`) to set
 `COLORTERM=truecolor` when `$TERM` matches any terminal type known to have
-working truecolor.
+working truecolor:
 
 ```lang=sh
 case $TERM in
-  iterm            |\
-  linux-truecolor  |\
-  screen-truecolor |\
-  tmux-truecolor   |\
-  xterm-truecolor  )    export COLORTERM=truecolor ;;
-  vte*)
+  iterm       |\
+  vte*        |\
+  *-truecolor ) export COLORTERM=truecolor ;;
 esac
 ```
 
