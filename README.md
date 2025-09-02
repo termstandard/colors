@@ -6,35 +6,29 @@ There exists common confusion about terminal colors. This is what we have right 
 
 - Plain ASCII without color controls;
 - Using ANSI escape sequences:
-  - 8 colors, plus bright and dim foreground
-  - 16 colors (same as 8 colors plus corresponding bright versions)
-  - 256-color palette: 216 colors + 8 ANSI + 24 gray (color palette entries are typically 24-bit)
-  - 24-bit truecolor: "888" colors (aka 16 million)
+  - 8 colors as a 2×2×2 color-cube, plus bright and dim foreground;
+  - 16 colors: 8 colors, plus corresponding bright versions;
+  - 256-color palette: 16 colors, plus a 6×6×6 color-cube and a 24-level gray scale;
+  - 24-bit TrueColor as a 256×256×256 color-cube (aka "16 million" or just "888")
 
-The 256-color palette is configured at start and is a 666-cube of colors,
-each of them defined as a 24-bit (888 RGB) color.
+The 256-color palette has a standardized initial arrangement, but all entries
+are separately reprogrammable. Using this mode, a terminal can display any 24-bit
+RGB colors, the same as TrueColor, but only 256 distinct colors simultaneously.
+The other modes do not use a palette; they just specify colors directly.
 
-This means that current support can only display 256 different colors in the
-terminal while "truecolor" means that you can display 16 million different
-colors at the same time.
-
-Truecolor escape codes do not use a color palette. They just specify the
-color directly.
-
-For a quick check of your terminal, run:
-
+To see if your terminal supports TrueColor, run:
 
 ```bash
-bg=1  # background
-bg=0  # foreground
+fgbg=48 # background
+fgbg=38 # foreground
 red=255
-green=100
+green=102
 blue=0
-printf '\e[%u;2;%u;%u;%um%s\e[m\n' $(( bg ? 48 : 38 )) "$red" "$green" "$blue" TRUECOLOR
+printf '\e[%u;2;%u;%u;%um%s\e[m\n' "$fgbg" "$red" "$green" "$blue" TRUECOLOR
 ```
 
-which will print <span style="color:#ff6400">TRUECOLOR</span> in brown if it
-understands Xterm-style true-color escapes.
+which will print <span style="color:#f60">TRUECOLOR</span> in brown if it
+understands Xterm-style TrueColor escape sequences.
 
 For a more thorough test, run:
 
@@ -153,15 +147,14 @@ esac
 ## Querying The Terminal
 
 In an interactive program that can read terminal responses, a more reliable
-method is available, that is transparent to sudo & ssh.
-
-Simply try sending a truecolor value to the terminal, followed by a query to
-ask what color it currently has. If the response indicates the same color as
-was just set, then truecolor is supported.
+method is available that is transparent to sudo & ssh. Simply try sending a
+TrueColor escape sequence to the terminal, followed by a query to ask what
+color it currently has. If the response indicates the same color as
+was just set, then TrueColor is supported.
 
 If the response indicates an 8-bit color, or does not indicate a color, or if
-no response is forthcoming within a few centiseconds, then assume that
-truecolor is not supported.
+no response is forthcoming within a few centiseconds, then TrueColor is
+probably unsupported.
 
 ```bash
 $ ( printf '\e[48:2:1:2:3m\eP$qm\e\\' ; xxd -g1 )
