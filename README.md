@@ -210,9 +210,8 @@ truecolor either.
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] - uses OpenGL
 - [konsole](https://konsole.kde.org/) [delimiter: colon, semicolon] - https://bugs.kde.org/show_bug.cgi?id=107487
 - [MacTerm](https://github.com/kmgrant/macterm) [delimiter: semicolon] - **Mac OS X platform**
-- [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb) (2.0.1 release)
-- [Ptyxis](https://gitlab.gnome.org/chergert/ptyxis) [delimiter: semicolon] - supports 8/16/256 colors and 24-bit true color (via VTE; true color since VTE 0.36 ~2014, full in Ptyxis from v45 in 2023) - **Linux/GNOME platform** - open source (GPL-3.0-or-later); container-focused with GPU acceleration -
-**Windows platform**
+- [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb) (2.0.1 release) - **Windows platform**
+- [Ptyxis](https://gitlab.gnome.org/chergert/ptyxis) [delimiter: semicolon] - supports 8/16/256 colors and 24-bit true color (via VTE; true color since VTE 0.36 ~2014, full in Ptyxis from v45 in 2023) - **Linux/GNOME platform** - open source (GPL-3.0-or-later); container-focused with GPU acceleration
 - [MobaXterm](https://mobaxterm.mobatek.net/) **Windows platform** - closed source (run `lscolors` to see a truecolor test)
 - [mosh](https://mosh.org/) (Mobile SHell) [delimiter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
 - [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) - Xshell7/ Xshell6 >= Build 0181 (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software)
