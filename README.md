@@ -216,6 +216,7 @@ truecolor either.
 - [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) - Xshell7/ Xshell6 >= Build 0181 (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software)
 - [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimiter: colon, semicolon]
 - [PowerShell Core](https://github.com/PowerShell/PowerShell) [delimiter: semicolon] aka PowerShell 6+ **Windows 10**
+- [Ptyxis](https://gitlab.gnome.org/chergert/ptyxis) [delimiter: semicolon] - supports 8/16/256 colors and 24-bit true color (via VTE; true color since VTE 0.36 ~2014, full in Ptyxis from v45 in 2023) - **Linux/GNOME platform** - open source (GPL-3.0-or-later); container-focused with GPU acceleration
 - [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) - [landed](https://git.tartarus.org/?p=simon/putty.git;a=commit;h=a4cbd3dfdb71d258e83bbf5b03a874c06d0b3106) in git (patched version [3] {approximation to 256 colors} and [4] {real truecolors} available) - **Windows platform**
 - [qterminal](https://github.com/lxqt/qterminal) [delimiter: semicolon] - after version 0.14.1 ([issue #78](https://github.com/qterminal/qterminal/issues/78))
 - [st](https://st.suckless.org/) (from suckless) [delimiter: semicolon] - https://lists.suckless.org/dev/1307/16688.html
