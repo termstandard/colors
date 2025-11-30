@@ -227,7 +227,7 @@ truecolor either.
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork of iTerm2
 - [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* - A terminal emulator for the 21st century.
 - [Warp](https://github.com/warpdotdev/Warp) - **MacOS X platform** written in Rust
-- [wezterm](https://wezfurlong.org/wezterm/) [delimeter: colon] - written in Rust
+- [wezterm](https://wezfurlong.org/wezterm/) [delimiter: colon] - written in Rust
 - Windows 10 bash console, since [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - [Windows Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1) [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
 - [Windows Terminal](https://github.com/microsoft/terminal) [delimiter: semicolon] - official, modern terminal emulator for Windows
