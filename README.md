@@ -226,7 +226,7 @@ truecolor either.
 - [Termux](https://termux.com/) [delimiter: semicolon] - **Android platform**
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork of iTerm2
 - [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* - A terminal emulator for the 21st century.
-- [Warp](https://github.com/warpdotdev/Warp) - **MacOS X platform** written in Rust
+- [Warp](https://github.com/warpdotdev/Warp) - **Windows/MacOS/Linux** written in Rust
 - [wezterm](https://wezfurlong.org/wezterm/) [delimiter: colon, semicolon] - written in Rust
 - Windows 10 bash console, since [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - [Windows Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1) [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
@@ -254,6 +254,7 @@ truecolor either.
   - [Tabby](https://github.com/Eugeny/tabby): highly configurable terminal emulator for Windows, macOS and Linux
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed source since [7.19.0 version](https://www.emtec.com/downloads/zoc/zoc_changes.txt)
+- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) **MacOS platform** - since MacOS 26
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
@@ -306,7 +307,6 @@ complex and may perform very slowly if used blindly [2].
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) - https://sourceforge.net/p/materm/feature-requests/41/
 - [MTPuTTY](https://ttyplus.com/) - **Windows platform**
 - [SmarTTY](https://sysprogs.com/SmarTTY/) - **Windows platform** - closed source (sent them a request)
-- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology) (Enlightenment) - https://phab.enlightenment.org/T746
 - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, MacOS and Linux
 - [Termius](https://www.termius.com/) - **Linux, Windows, OS X platforms**, closed source
