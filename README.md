@@ -249,12 +249,12 @@ truecolor either.
   - **libvte**-based [Tilix](https://github.com/gnunn1/tilix) - written in D. Similar user interface as for Terminator.
   - **libvte**-based [tinyterm](https://code.google.com/p/tinyterm)
   - **libvte**-based [xfce4-terminal](https://docs.xfce.org/apps/terminal/start) - since [0.6.90](https://github.com/xfce-mirror/xfce4-terminal/releases/tag/xfce4-terminal-0.6.90) release, if compiled with GTK+3
+- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) **MacOS platform** - since MacOS 26
 - All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimiter: semicolon]
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
   - [Tabby](https://github.com/Eugeny/tabby): highly configurable terminal emulator for Windows, macOS and Linux
   - [VS Code](https://code.visualstudio.com/)'s integrated terminal
 - [ZOC](https://www.emtec.com/zoc/index.html) **Windows/OS X platform** - closed source since [7.19.0 version](https://www.emtec.com/downloads/zoc/zoc_changes.txt)
-- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) **MacOS platform** - since MacOS 26
 
 There are a bunch of libvte-based terminals for GTK2, so they are listed in the
 another section.
