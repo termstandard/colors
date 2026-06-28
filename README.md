@@ -350,7 +350,8 @@ complex and may perform very slowly if used blindly [2].
 - [cmus](https://github.com/cmus/cmus) (music player) - [issue #799](https://github.com/cmus/cmus/issues/799)
 - [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET (curses-like) - [issue #48](https://github.com/migueldeicaza/gui.cs/issues/48)
 - [mcabber](https://mcabber.com/) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
-- [mutt](http://mutt.org/) (email client) - http://dev.mutt.org/trac/ticket/3674
+- [mutt](http://mutt.org/) (email client) - [ticket
+#3674](https://gitlab.com/muttmua/trac-tickets/-/blob/master/tickets/open/3674-Support_for_True_Color_16_millions_colors.txt?ref_type=heads)
 - [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
 - [scim](https://github.com/andmarti1424/sc-im) (spreadsheet program) - [issue #306](https://github.com/andmarti1424/sc-im/issues/306)
 - [termbox](https://github.com/nsf/termbox) library - [issue #37](https://github.com/nsf/termbox/issues/37) (there is a fork [termbox_next](https://github.com/cylgom/termbox_next) with the support
