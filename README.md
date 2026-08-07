@@ -332,6 +332,7 @@ complex and may perform very slowly if used blindly [2].
 - [micro editor](https://micro-editor.github.io/)
 - [mpv](https://github.com/mpv-player/mpv) - video player with support of console-only output (since 0.22 version)
 - [ncurses](https://www.gnu.org/software/ncurses/) library - since 6.1 version
+- [neomutt](https://github.com/neomutt/neomutt) email client (since 2023-05-17)
 - [neovim](https://github.com/neovim/neovim) - since commit [8dd415e887923f99ab5daaeba9f0303e173dd1aa](https://github.com/neovim/neovim/commit/8dd415e887923f99ab5daaeba9f0303e173dd1aa); need to set [termguicolors](https://neovim.io/doc/user/options.html#%27termguicolors) to enable truecolor.
 - [Notcurses](https://notcurses.com/) library - all releases
 - [radare2](https://github.com/radareorg/radare2) - reverse engineering framework; since 0.9.6 version.
@@ -352,7 +353,6 @@ complex and may perform very slowly if used blindly [2].
 - [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET (curses-like) - [issue #48](https://github.com/migueldeicaza/gui.cs/issues/48)
 - [mcabber](https://mcabber.com/) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
 - [mutt](http://mutt.org/) (email client) - http://dev.mutt.org/trac/ticket/3674
-- [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
 - [scim](https://github.com/andmarti1424/sc-im) (spreadsheet program) - [issue #306](https://github.com/andmarti1424/sc-im/issues/306)
 - [termbox](https://github.com/nsf/termbox) library - [issue #37](https://github.com/nsf/termbox/issues/37) (there is a fork [termbox_next](https://github.com/cylgom/termbox_next) with the support
 - [tig](https://github.com/jonas/tig) (git TUI) - [issue #227](https://github.com/jonas/tig/issues/227)
