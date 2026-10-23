@@ -207,6 +207,7 @@ truecolor either.
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) - HTML/CSS/JS-based (ChromeOS)
 - [iTerm2](https://iterm2.com/) [delimiter: colon, semicolon] - since v3 version
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] - uses OpenGL
+- [kmscon](https://www.freedesktop.org/wiki/Software/kmscon/) [delimiter: semicolon] - Default **Linux console** on some distributions.
 - [konsole](https://konsole.kde.org/) [delimiter: colon, semicolon] - https://bugs.kde.org/show_bug.cgi?id=107487
 - [MacTerm](https://github.com/kmgrant/macterm) [delimiter: semicolon] - **Mac OS X platform**
 - [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb) (2.0.1 release) - **Windows platform**
