@@ -207,10 +207,12 @@ truecolor either.
 - [hterm](https://chromium.googlesource.com/apps/libapps/+/master/hterm) - HTML/CSS/JS-based (ChromeOS)
 - [iTerm2](https://iterm2.com/) [delimiter: colon, semicolon] - since v3 version
 - [kitty](https://github.com/kovidgoyal/kitty) [delimiter: colon,semicolon] - uses OpenGL
+- [kmscon](https://www.freedesktop.org/wiki/Software/kmscon/) [delimiter: semicolon] - Default **Linux console** on some distributions.
 - [konsole](https://konsole.kde.org/) [delimiter: colon, semicolon] - https://bugs.kde.org/show_bug.cgi?id=107487
 - [MacTerm](https://github.com/kmgrant/macterm) [delimiter: semicolon] - **Mac OS X platform**
 - [mintty](https://mintty.github.io/) [delimiter: semicolon] **Cygwin and MSYS/MSYS2** since commit [43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb](https://github.com/mintty/mintty/commit/43f0ed8a46c6549cb9a3ea27abc057b5abe13bdb) (2.0.1 release) - **Windows platform**
 - [MobaXterm](https://mobaxterm.mobatek.net/) **Windows platform** - closed source (run `lscolors` to see a truecolor test)
+- [Mobile SSH](https://mobile-ssh.github.io/) - **Android and iOS platform**, closed source - sets `COLORTERM=truecolor`, [docs](https://mobile-ssh.github.io/docs/terminal/)
 - [mosh](https://mosh.org/) (Mobile SHell) [delimiter: semicolon] - since commit [6cfa4aef598146cfbde7f7a4a83438c3769a2835](https://github.com/mobile-shell/mosh/commit/6cfa4aef598146cfbde7f7a4a83438c3769a2835)
 - [Netsarang XShell](https://www.netsarang.com/products/xsh_overview.html) - Xshell7/ Xshell6 >= Build 0181 (You must set _**Tools-Options.. -Advanced**_, check the _**Use true color\***_ and **reopen** the software)
 - [pangoterm](http://www.leonerd.org.uk/code/pangoterm/) [delimiter: colon, semicolon]
@@ -225,7 +227,7 @@ truecolor either.
 - [Termux](https://termux.com/) [delimiter: semicolon] - **Android platform**
 - [Therm](https://github.com/trufae/Therm) [delimiter: colon, semicolon] - fork of iTerm2
 - [upterm](https://github.com/railsware/upterm) *Windows/MacOS/Linux Electron* - A terminal emulator for the 21st century.
-- [Warp](https://github.com/warpdotdev/Warp) - **MacOS X platform** written in Rust
+- [Warp](https://github.com/warpdotdev/Warp) - **Windows/MacOS/Linux** written in Rust
 - [wezterm](https://wezfurlong.org/wezterm/) [delimiter: colon, semicolon] - written in Rust
 - Windows 10 bash console, since [Windows Insiders build 14931](https://blogs.msdn.microsoft.com/commandline/2016/09/22/24-bit-color-in-the-windows-console/)
 - [Windows Powershell](https://en.wikipedia.org/wiki/PowerShell#PowerShell_5.1) [delimiter: semicolon] - aka PowerShell 5.x and below **Windows 10**
@@ -248,6 +250,7 @@ truecolor either.
   - **libvte**-based [Tilix](https://github.com/gnunn1/tilix) - written in D. Similar user interface as for Terminator.
   - **libvte**-based [tinyterm](https://code.google.com/p/tinyterm)
   - **libvte**-based [xfce4-terminal](https://docs.xfce.org/apps/terminal/start) - since [0.6.90](https://github.com/xfce-mirror/xfce4-terminal/releases/tag/xfce4-terminal-0.6.90) release, if compiled with GTK+3
+- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)) **MacOS platform** - since MacOS 26
 - All [xterm.js](https://github.com/xtermjs/xterm.js) based terminals (since [v3.13](https://github.com/xtermjs/xterm.js/issues/484), [v4.3 for webgl](https://github.com/xtermjs/xterm.js/pull/2552)) [delimiter: semicolon]
   - [Hyper.app](https://hyper.is/): crossplatform, HTML/CSS/JS-based (Electron)
   - [Tabby](https://github.com/Eugeny/tabby): highly configurable terminal emulator for Windows, macOS and Linux
@@ -294,7 +297,7 @@ complex and may perform very slowly if used blindly [2].
 ## Not Supporting Truecolor
 
 - [aterm](http://www.afterstep.org/aterm.php) (looks abandoned) - https://sourceforge.net/p/aterm/feature-requests/23/
-- [Cmder](https://cmder.net/): Portable console emulator for Windows, based on ConEmu.
+- [Cmder](https://cmder.app/): Portable console emulator for Windows, based on ConEmu.
 - [fbcon](https://www.kernel.org/doc/Documentation/fb/fbcon.txt) (prior to Linux 3.16) - https://bugzilla.kernel.org/show_bug.cgi?id=79551
 - [frecon](https://chromium.googlesource.com/chromiumos/platform/frecon/) - Console that is part of ChromeOS kernel
 - [FreeBSD console](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=191652)
@@ -305,7 +308,6 @@ complex and may perform very slowly if used blindly [2].
 - [mrxvt](https://sourceforge.net/projects/materm) (looks abandoned) - https://sourceforge.net/p/materm/feature-requests/41/
 - [MTPuTTY](https://ttyplus.com/) - **Windows platform**
 - [SmarTTY](https://sysprogs.com/SmarTTY/) - **Windows platform** - closed source (sent them a request)
-- [Terminal.app](https://en.wikipedia.org/wiki/Terminal_(macOS)): MacOS Terminal built-in
 - [Terminology](https://www.enlightenment.org/about-terminology) (Enlightenment) - https://phab.enlightenment.org/T746
 - [Terminus](https://github.com/Eugeny/terminus): highly configurable terminal emulator for Windows, MacOS and Linux
 - [Termius](https://www.termius.com/) - **Linux, Windows, OS X platforms**, closed source
@@ -319,6 +321,7 @@ complex and may perform very slowly if used blindly [2].
 ## Console Programs Supporting Truecolor
 
 - [clifm](https://github.com/leo-arch/clifm) - The command line file manager
+- [console](https://github.com/console-rs/console) - Rust library, since [#271](https://github.com/console-rs/console/pull/271), released in [0.16.2](https://github.com/console-rs/console/releases/tag/0.16.2)
 - [dte](https://gitlab.com/craigbarnes/dte) text editor - (since [version 1.8](https://craigbarnes.gitlab.io/dte/releases.html#v1.8))
 - [elinks](https://repo.or.cz/w/elinks.git) - [configure.in:1410](https://repo.or.cz/w/elinks.git/blob/HEAD:/configure.in#l1410) (./configure --enable-true-color)
 - [emacs](https://www.gnu.org/software/emacs/) - since [26.1 release](https://lists.gnu.org/archive/html/emacs-devel/2018-05/msg00765.html)
@@ -351,7 +354,8 @@ complex and may perform very slowly if used blindly [2].
 - [cmus](https://github.com/cmus/cmus) (music player) - [issue #799](https://github.com/cmus/cmus/issues/799)
 - [gui.cs](https://github.com/migueldeicaza/gui.cs) Terminal UI toolkit for .NET (curses-like) - [issue #48](https://github.com/migueldeicaza/gui.cs/issues/48)
 - [mcabber](https://mcabber.com/) (jabber client) - [issue #126](https://bitbucket.org/McKael/mcabber-crew/issue/126/support-for-true-color-16-millions-colors)
-- [mutt](http://mutt.org/) (email client) - http://dev.mutt.org/trac/ticket/3674
+- [mutt](http://mutt.org/) (email client) - [ticket #3674](https://gitlab.com/muttmua/trac-tickets/-/blob/master/tickets/open/3674-Support_for_True_Color_16_millions_colors.txt?ref_type=heads)
+- [neomutt](https://github.com/neomutt/neomutt) (email client) - [issue #58](https://github.com/neomutt/neomutt/issues/85)
 - [scim](https://github.com/andmarti1424/sc-im) (spreadsheet program) - [issue #306](https://github.com/andmarti1424/sc-im/issues/306)
 - [termbox](https://github.com/nsf/termbox) library - [issue #37](https://github.com/nsf/termbox/issues/37) (there is a fork [termbox_next](https://github.com/cylgom/termbox_next) with the support
 - [tig](https://github.com/jonas/tig) (git TUI) - [issue #227](https://github.com/jonas/tig/issues/227)
