@@ -334,6 +334,7 @@ complex and may perform very slowly if used blindly [2].
 - [micro editor](https://micro-editor.github.io/)
 - [mpv](https://github.com/mpv-player/mpv) - video player with support of console-only output (since 0.22 version)
 - [ncurses](https://www.gnu.org/software/ncurses/) library - since 6.1 version
+- [neomutt](https://github.com/neomutt/neomutt) email client (since 2023-05-17)
 - [neovim](https://github.com/neovim/neovim) - since commit [8dd415e887923f99ab5daaeba9f0303e173dd1aa](https://github.com/neovim/neovim/commit/8dd415e887923f99ab5daaeba9f0303e173dd1aa); need to set [termguicolors](https://neovim.io/doc/user/options.html#%27termguicolors) to enable truecolor.
 - [Notcurses](https://notcurses.com/) library - all releases
 - [radare2](https://github.com/radareorg/radare2) - reverse engineering framework; since 0.9.6 version.
